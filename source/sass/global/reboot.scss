@@ -12,15 +12,6 @@ body {
 }
 
 html {
-  font-style: normal;
-  font-weight: 400;
-  font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   // оптимизация выравнивания шрифта относительно центра строки
   text-rendering: optimizeLegibility;
   // если по прежнему есть проблемы с выравниванием
@@ -28,14 +19,21 @@ html {
 }
 
 body {
-  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  min-width: 320px;
   height: 100%;
-
+  width: 100%;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-sapphire;
   background-color: $color-default-white;
 }
 
 a {
-  color: $color-default-black;
   text-decoration: none;
 }
 
@@ -59,7 +57,7 @@ textarea {
 input:-webkit-autofill {
   box-shadow: inset 0 0 0 1000px $color-default-white;
 
-  -webkit-text-fill-color: $color-default-black;
+  // -webkit-text-fill-color: $color-default-black;
 }
 
 // firefox placeholder \ invalid fix + ios bdrs
