@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,16 +13,68 @@
     <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
+  <body class="page__body page-body">
+    <div class="page-body__wrapper">
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo" href="#." aria-label="Логотип фитнес-центра.">
+            <svg width="89" height="20">
+              <use xlink:href="img/sprite_auto.svg#logo-supergym"></use>
+            </svg>
+          </a>
+          <a class="page-header__phone" href="tel:88005555555">
+            <span>8-800-555-55-55</span>
+          </a>
+        </div>
       </header>
-      <main>
+      <main class="main">
+        <header class="inner-header inner-header--background">
+          <div class="inner-header__wrapper">
+            <div class="inner-header__wrapper-headline">
+              <h1>Фитнес центр</h1>
+              <p>Омск</p>
+              <ul class="inner-header__list inner-header__list--position">
+                <li class="inner-header__item">Тренажёрный зал</li>
+                <li class="inner-header__item">Групповые занятия</li>
+                <li class="inner-header__item">Кардио-зона</li>
+              </ul>
+              <a class="inner-header__button button" href="#">
+                Купить абонемент
+              </a>
+            </div>
+            <div class="inner-header__image">
+              <picture>
+                <source type="image/webp" srcset="img//main-trainer.webp 1x, img//main-trainer@2x.webp 2x">
+                <!-- 1х: 500x556px; 2x: 1000x1112px -->
+                <img src="img/main-trainer.jpg" srcset="img/main-trainer@2x.jpg 2x" width="500" height="556" alt="Фитнес-инструктор в футболке с логотипом Супермена.">
+              </picture>
+            </div>
+
+            <ul class="inner-header__list socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Страница фитнес-центра в Facebook.">
+                  <span>FB</span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Страница фитнес-центра в Vkontakte.">
+                  <span>VK</span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Страница фитнес-центра в Instagram.">
+                  <span>IG</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </header>
 
       </main>
-      <footer>
-      </footer>
     </div>
+    <footer class="page-footer">
+    </footer>
+
 
     <!-- <script src="js/vendor.min.js"></script> -->
     <script src="js/main.min.js"></script>

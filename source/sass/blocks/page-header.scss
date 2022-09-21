@@ -1,0 +1,55 @@
+.page-header__wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 10px 0 0;
+  margin: 0 auto;
+  max-width: #{"min(84.9%, 1160px)"};
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+
+  @media (max-width: $vp-1199) {
+    padding: 13px 0 0;
+    max-width: #{"min(88.2%, 1100px)"};
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0;
+    max-width: #{"min(90.6%, 678px)"};
+  }
+}
+
+.page-header__logo {
+  padding: 20px 0 0;
+}
+
+.page-header__logo svg {
+  @media (max-width: $vp-1199) {
+    width: 82px;
+    height: 17px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 68px;
+    height: 15px;
+  }
+}
+
+.page-header__phone {
+  padding: 20px 0 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  color: $color-default-white;
+
+  @media (max-width: $vp-1199) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 20px;
+  }
+}

@@ -14,7 +14,7 @@ $color-resolution-blue: #1c3374;
 $color-sapphire: #102654;
 $color-dark-cerulean: #003d85;
 $color-cobalt: #0041ca;
-$color-egyptian-blue: #103AAE;
+$color-egyptian-blue: #103aae;
 $color-black-russian: #030a1a;
 $color-torch-red: #ed0233;
 $color-venetian-red: #b80027;
@@ -23,6 +23,7 @@ $color-crimson: #d10a42;
 // Gradient
 
 // $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$dark-cerulean-to-top-right: radial-gradient(farthest-corner at bottom left, $color-dark-cerulean 8.95%, $color-venetian-red 87.03%);
 
 // Typography
 // ---------------------------------
@@ -50,7 +51,6 @@ $color-crimson: #d10a42;
 // Viewports
 // ---------------------------------
 
-$vp-320: 320px;
 $vp-767: 767px;
 $vp-1199: 1199px;
 
