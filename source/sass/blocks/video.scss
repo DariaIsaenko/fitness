@@ -1,0 +1,102 @@
+.video__image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient($color-dark-cerulean-transparent, $color-dark-cerulean-transparent), url("../img/gym-video-desktop.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient($color-dark-cerulean-transparent, $color-dark-cerulean-transparent), url("../img/gym-video-desktop@2x.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (max-width: $vp-1199) {
+    background: linear-gradient($color-dark-cerulean-transparent, $color-dark-cerulean-transparent), url("../img/gym-video-tablet.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($color-dark-cerulean-transparent, $color-dark-cerulean-transparent), url("../img/gym-video-tablet@2x.webp");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    background: linear-gradient($color-dark-cerulean-transparent, $color-dark-cerulean-transparent), url("../img/gym-video-mobile.webp");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($color-dark-cerulean-transparent, $color-dark-cerulean-transparent), url("../img/gym-video-mobile@2x.webp");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+    }
+  }
+}
+
+.video__button-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50px, -50px);
+  padding: 14px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  box-shadow: inset 1px 0 2px 1px $color-torch-red-transparent, inset -1px 0 2px 1px $color-cobalt-transparent;
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    transform: translate(-38px, -35px);
+    width: 72px;
+    height: 72px;
+    background: $dark-cerulean-to-top-right;
+    border: none;
+    border-radius: 50%;
+
+    @media (max-width: $vp-1199) {
+      transform: translate(-25px, -25px);
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    transform: translate(-4px, -7px);
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-left: 14px solid $color-default-white;
+    border-bottom: 7px solid transparent;
+
+    @media (max-width: $vp-1199) {
+      transform: translate(-2px, -4px);
+      border-top: 5px solid transparent;
+      border-left: 10px solid $color-default-white;
+      border-bottom: 5px solid transparent;
+    }
+  }
+
+  @media (max-width: $vp-1199) {
+    transform: translate(-40px, -40px);
+    padding: 10px 11px 11px 10px;
+    width: 73px;
+    height: 73px;
+  }
+}

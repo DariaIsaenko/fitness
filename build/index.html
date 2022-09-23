@@ -69,7 +69,59 @@
             </ul>
           </div>
         </header>
-
+        <section class="main__intro intro">
+          <div class="intro__description">
+            <h2>Тренажерный зал</h2>
+            <h3>Просторный зал площадью 900 кв/м</h3>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал
+              оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p data-tablet-none>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько
+              оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+          <div class="intro__img">
+            <picture>
+              <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
+              <!-- 1х: 660x401px; 2x: 1320x802px -->
+              <img src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401"
+                alt="Тренажерный зал.">
+            </picture>
+          </div>
+          <div class="intro__video video">
+            <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <div class="video__image"></div>
+            <button class="video__button-play" type="button"></button>
+          </div>
+        </section>
+        <section class="catalog">
+          <h2>Абонементы</h2>
+          <ul class="catalog__list choice-month">
+            <li class="choice-month__item">1 месяц</li>
+            <li class="choice-month__item">6 месяцев</li>
+            <li class="choice-month__item">12 месяцев</li>
+          </ul>
+          <ul class="catalog__list choice-subscription">
+            <li class="choice-subscription__item">
+              <h3>С тренером</h3>
+              <span>12 занятий</span>
+              <p data-trainer-half-year="28500" data-trainer-year="55000">5000</p>
+              <a class="catalog__button button" href="#">Купить абонемент</a>
+            </li>
+            <li class="choice-subscription__item">
+              <h3>Дневной</h3>
+              <span>с 8:00 до 17:00</span>
+              <p data-day-half-year="9700" data-day-year="18700">1700</p>
+              <a class="catalog__button button" href="#">Купить абонемент</a>
+            </li>
+            <li class="choice-subscription__item">
+              <h3>Полный день</h3>
+              <span>с 8:00 до 22:00</span>
+              <p data-all-day-half-year="15400" data-all-day-year="29700">2700</p>
+              <a class="catalog__button button" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </section>
       </main>
     </div>
     <footer class="page-footer">

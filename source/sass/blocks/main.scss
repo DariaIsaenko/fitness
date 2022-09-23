@@ -1,0 +1,19 @@
+.main__intro {
+  position: relative;
+  padding: 120px 0;
+  margin: 0 auto;
+  max-width: #{"min(81%, 1100px)"};
+  display: flex;
+
+  @media (max-width: $vp-1199) {
+    padding: 100px 0;
+    max-width: #{"min(88.2%, 1110px)"};
+    flex-direction: column;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
