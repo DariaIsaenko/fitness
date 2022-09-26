@@ -1,0 +1,103 @@
+.catalog--background {
+  position: relative;
+  background-color: $color-ghost-white;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(65px);
+    content: "";
+    width: 286px;
+    height: 411px;
+    background: url("../img/svg/barbell-weight-desktop.svg");
+    background-repeat: no-repeat;
+
+    @media (max-width: $vp-1199) {
+      transform: translateY(11px);
+      width: 345px;
+      height: 371px;
+      background: url("../img/svg/barbell-weight-tablet.svg");
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: $vp-767) {
+      display: none;
+    }
+  }
+}
+
+.catalog__wrapper {
+  position: relative;
+  padding: 120px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $vp-1199) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 0;
+  }
+}
+
+.catalog__wrapper h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  text-transform: uppercase;
+  color: $color-sapphire;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 45px;
+    font-size: 42px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 35px;
+    font-size: 32px;
+  }
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__list.choice-month {
+  margin: 0 auto;
+  margin-bottom: 39px;
+  max-width: 1160px;
+  border-bottom: 2px solid $color-grey-transparent;
+
+  @media (max-width: $vp-1199) {
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 678px;
+  }
+}
+
+.catalog__list.choice-subscription {
+  justify-content: space-between;
+  max-width: #{"min(84.9%, 1160px)"};
+  width: 100%;
+
+  @media (max-width: $vp-1199) {
+    max-width: #{"min(58.9%, 1110px)"};
+    flex-direction: column;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: #{"min(90.6%, 442px)"};
+  }
+}
+

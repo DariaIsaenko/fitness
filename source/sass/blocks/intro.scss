@@ -78,6 +78,12 @@
   }
 }
 
+.intro__description.is-hidden {
+  p:nth-last-child(1) {
+    display: none;
+  }
+}
+
 .intro__img {
   max-width: #{"min(60%, 660px)"};
   height: 401px;

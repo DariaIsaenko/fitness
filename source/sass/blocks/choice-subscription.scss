@@ -1,0 +1,138 @@
+.choice-subscription__item {
+  box-sizing: border-box;
+  padding: 61px 70px;
+  max-width: #{"min(31%, 360px)"};
+  display: flex;
+  flex-direction: column;
+  background-color: $color-default-white;
+  border: 7px solid transparent;
+  z-index: 1;
+
+  &:hover {
+    border: 7px solid;
+    border-image: $crimson-to-bottom;
+
+    .choice-subscription__button {
+      color: $color-default-white;
+      background: $color-torch-red-to-right;
+      border: 2px solid transparent;
+    }
+  }
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 35px;
+    padding: 55px 42px;
+  }
+}
+
+.choice-subscription__item h3 {
+  margin: 0;
+  margin-bottom: 22px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28.64px;
+  text-align: center;
+  color: $color-sapphire;
+
+  @media (max-width: $vp-1199) {
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 24.23px;
+  }
+}
+
+.choice-subscription__item p {
+  margin: 0;
+  margin-bottom: 59px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $color-chambray;
+
+  @media (max-width: $vp-1199) {
+  }
+
+  @media (max-width: $vp-767) {
+  }
+}
+
+.choice-subscription__price {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 59px;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 50px;
+  }
+}
+
+.choice-subscription__price p {
+  margin: 0;
+  margin-right: 14px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  text-align: center;
+  color: $color-egyptian-blue;
+  z-index: 2;
+
+  @media (max-width: $vp-1199) {
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 48px;
+    line-height: 72px;
+  }
+}
+
+.choice-subscription__price svg {
+  z-index: 1;
+}
+
+.choice-subscription__price span {
+  position: absolute;
+  top: 0;
+  transform: translateY(-60px);
+  display: block;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+  color: $color-whisper;
+  opacity: 48%;
+
+  @media (max-width: $vp-767) {
+    transform: translateY(-50px);
+    font-size: 80px;
+    line-height: 120px;
+  }
+}
+
+.choice-subscription__button {
+  padding: 23px 45px;
+  width: 206px;
+  align-self: center;
+  color: $color-sapphire;
+  border: 2px solid $color-sapphire;
+
+  @media (max-width: $vp-1199) {
+  }
+
+  @media (max-width: $vp-767) {
+  }
+}

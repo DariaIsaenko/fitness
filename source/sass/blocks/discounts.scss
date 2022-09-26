@@ -1,0 +1,55 @@
+.discounts__wrapper {
+  padding: 120px 0 0;
+  margin: 0 auto;
+  max-width: #{"min(84.9%, 1160px)"};
+
+  @media (max-width: $vp-1199) {
+    padding: 100px 0 0;
+    max-width: #{"min(88.2%, 1110px)"};
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 0 0;
+    max-width: #{"min(90.6%, 678px)"};
+  }
+}
+
+.discounts__wrapper h2 {
+  margin: 0;
+  margin-bottom: 62px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-sapphire;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 50px;
+    font-size: 42px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 32px;
+  }
+}
+
+.discounts__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+
+  @media (max-width: $vp-1199) {
+    gap: 30px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
