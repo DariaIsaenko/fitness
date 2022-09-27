@@ -1,0 +1,39 @@
+.form__wrapper-input {
+  margin-bottom: 30px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.form__wrapper-input input {
+  padding: 10px 0;
+  margin-bottom: 20px;
+  min-width: 160px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $color-light-slate-grey;
+
+  &::placeholder {
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: $color-default-white;
+  }
+}
+
+.form__button {
+  padding: 16px 56px;
+  width: 100%;
+  border: 3px solid $color-default-white;
+  font-size: 14px;
+  line-height: 100%;
+}

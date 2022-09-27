@@ -1,0 +1,21 @@
+.page-footer__wrapper-background {
+  background: $color-sapphire-to-right;
+  border-top: 1px solid $color-light-slate-grey;
+
+  @media (max-width: $vp-1199) {
+    background: none;
+  }
+}
+
+.page-footer__wrapper-contact {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: #{"min(84.9%, 1160px)"};
+
+  @media (max-width: $vp-1199) {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

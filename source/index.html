@@ -288,102 +288,111 @@
       </main>
     </div>
     <footer class="page-footer">
+      <div class="page-footer__wrapper-background">
+        <div class="page-footer__wrapper-contact">
 
-      <!-- Форма обратной связи -->
+          <!-- Форма обратной связи -->
 
-      <section class="feedback feedback--background" id="feedback">
-        <div class="feedback__wrapper">
-          <h2 class="visually-hidden">Форма обратной связи.</h2>
-          <h2>Бесплатное занятие</h2>
-          <form class="feedback__form form" action="https://echo.htmlacademy.ru/">
-            <label class="visually-hidden" for="form-name">name</label>
-            <input id="form-name" type="text" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?{1,}" name="name" required>
-            <label class="visually-hidden" for="form-phone">phone</label>
-            <input id="form-phone" type="tel" placeholder="Телефон" name="phone" pattern="[0-9]{1,12}" required>
-            <button class="form__button button" type="submit">Отправить</button>
-          </form>
+          <section class="feedback feedback--background" id="feedback">
+            <div class="feedback__wrapper">
+              <h2 class="visually-hidden">Форма обратной связи.</h2>
+              <h2>Бесплатное занятие</h2>
+              <form class="feedback__form form" action="https://echo.htmlacademy.ru/">
+                <div class="form__wrapper-input">
+                  <label class="visually-hidden" for="form-name">name</label>
+                  <input id="form-name" type="text" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?{1,}"
+                    name="name" required>
+                  <label class="visually-hidden" for="form-phone">phone</label>
+                  <input id="form-phone" type="tel" placeholder="Телефон" name="phone" pattern="[0-9]{1,12}" required>
+                </div>
+                <button class="form__button button" type="submit">Отправить</button>
+              </form>
+            </div>
+          </section>
+
+
+          <!-- Контакты -->
+
+          <section class="contacts">
+            <div class="contacts___wrapper">
+              <h2>Контакты</h2>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <h3>Адрес:</h3>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                </li>
+                <li class="contacts__item contacts__item--swap">
+                  <h3>Телефон:</h3>
+                  <p>8-800-555-55-55</p>
+                </li>
+                <li class="contacts__item">
+                  <h3>График работы:</h3>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+                <li class="contacts__item">
+                  <h3>Email:</h3>
+                  <p>omsk@supergym.ru</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+      <section class="page-footer__main-content footer-main">
+        <div class="footer-main__wrapper">
+          <a class="footer-main__logo" href="#." aria-label="Логотип фитнес-центра.">
+            <svg width="89" height="20">
+              <use xlink:href="img/sprite_auto.svg#logo-supergym"></use>
+            </svg>
+            <ul class="footer-main__list">
+              <li class="footer-main__item">
+                <a href="#" class="footer-main__link">Услуги</a>
+              </li>
+              <li class="footer-main__item">
+                <a href="#" class="footer-main__link">Абонементы</a>
+              </li>
+              <li class="footer-main__item">
+                <a href="#" class="footer-main__link">Акции</a>
+              </li>
+              <li class="footer-main__item">
+                <a href="#" class="footer-main__link">Тренеры</a>
+              </li>
+              <li class="footer-main__item">
+                <a href="#" class="footer-main__link">Расписание</a>
+              </li>
+            </ul>
+            <ul class="footer-main__list socials">
+              <li class="socials__item">
+                <a class="socials__link socials__link--vkontakte" href="#"
+                  aria-label="Страница компании Smart Device в Facebook.">
+                  <svg width="25" height="25">
+                    <use xlink:href="img/sprite_auto.svg#vkontakte"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--odnoklassniki" href="#"
+                  aria-label="Страница компании Smart Device в Facebook.">
+                  <svg width="25" height="25">
+                    <use xlink:href="img/sprite_auto.svg#odnoklassniki"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--reddit" href="#"
+                  aria-label="Страница компании Smart Device в Reddit.">
+                  <svg width="25" height="25">
+                    <use xlink:href="img/sprite_auto.svg#reddit"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </a>
         </div>
       </section>
     </footer>
-
-    <!-- Контакты -->
-
-    <section class="contacts">
-      <div class="contacts___wrapper">
-        <h2>Контакты</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <h3>Адрес:</h3>
-            <p>г. Омск, ул. 60 лет Октября, 7</p>
-          </li>
-          <li class="contacts__item">
-            <h3>Телефон:</h3>
-            <p>8-800-555-55-55</p>
-          </li>
-          <li class="contacts__item">
-            <h3>График работы:</h3>
-            <p>Пн-Вс: с 8:00 до 22:00</p>
-          </li>
-          <li class="contacts__item">
-            <h3>Email:</h3>
-            <p>omsk@supergym.ru</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="page-footer__main-content footer-main">
-      <div class="footer-main__wrapper">
-        <a class="footer-main__logo" href="#." aria-label="Логотип фитнес-центра.">
-          <svg width="89" height="20">
-            <use xlink:href="img/sprite_auto.svg#logo-supergym"></use>
-          </svg>
-          <ul class="footer-main__list">
-            <li class="footer-main__item">
-              <a href="#" class="footer-main__link">Услуги</a>
-            </li>
-            <li class="footer-main__item">
-              <a href="#" class="footer-main__link">Абонементы</a>
-            </li>
-            <li class="footer-main__item">
-              <a href="#" class="footer-main__link">Акции</a>
-            </li>
-            <li class="footer-main__item">
-              <a href="#" class="footer-main__link">Тренеры</a>
-            </li>
-            <li class="footer-main__item">
-              <a href="#" class="footer-main__link">Расписание</a>
-            </li>
-          </ul>
-          <ul class="footer-main__list socials">
-            <li class="socials__item">
-              <a class="socials__link socials__link--vkontakte" href="#"
-                    aria-label="Страница компании Smart Device в Facebook.">
-                    <svg width="25" height="25">
-                      <use xlink:href="img/sprite_auto.svg#vkontakte"></use>
-                    </svg>
-                  </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--odnoklassniki" href="#"
-                    aria-label="Страница компании Smart Device в Facebook.">
-                    <svg width="25" height="25">
-                      <use xlink:href="img/sprite_auto.svg#odnoklassniki"></use>
-                    </svg>
-                  </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--reddit" href="#"
-                    aria-label="Страница компании Smart Device в Reddit.">
-                    <svg width="25" height="25">
-                      <use xlink:href="img/sprite_auto.svg#reddit"></use>
-                    </svg>
-                  </a>
-            </li>
-          </ul>
-        </a>
-      </div>
-    </section>
 
 
     <!-- <script src="js/vendor.min.js"></script> -->
