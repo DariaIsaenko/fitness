@@ -15,28 +15,32 @@ $color-dark-cerulean: #003d85;
 $color-cobalt: #0041ca;
 $color-egyptian-blue: #103aae;
 $color-cobalt-gradient: #003eb7;
+$color-persian-blue: #2e35ac;
 $color-smalt: #00359f;
+$color-black-russian: #030a1a;
+
 
 $color-torch-red: #ed0233;
 $color-crimson: #d10a42;
 $color-venetian-red: #b80027;
 
 
-$color-black-russian: #030a1a;
 
 
-
-
-$color-dark-cerulean-transparent: rgba(20, 54, 122, 0.5);
 $color-torch-red-transparent: rgba(237, 2, 51, 0.2);
-$color-cobalt-transparent: rgba(0, 62, 183, 0.2);
-$color-sapphire-transparent: rgba(16, 38, 84, 0.5);
+$color-crimson-tarnsparent: rgba(209, 10, 66, 0.2);
 $color-grey-transparent: rgba(120, 120, 120, 0.2);
+$color-cobalt-transparent: rgba(0, 62, 183, 0.2);
+$color-dark-cerulean-transparent: rgba(20, 54, 122, 0.5);
+$color-sapphire-transparent: rgba(16, 38, 84, 0.5);
+
+
 
 // Gradient
 
 $dark-cerulean-to-top-right: radial-gradient(farthest-corner at bottom left, $color-dark-cerulean 8.95%, $color-venetian-red 87.03%);
 $crimson-to-bottom: linear-gradient($color-crimson, $color-smalt) 30;
+$cobalt-to-top: linear-gradient(135deg, $color-crimson, $color-cobalt);
 $color-torch-red-to-right: linear-gradient(90deg, $color-torch-red 0%, $color-cobalt-gradient 100%);
 $color-sapphire-to-right: linear-gradient(to right, $color-sapphire 50%, transparent 50%);
 

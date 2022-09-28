@@ -1,292 +1,310 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>Fitness Centre</title>
-    <link rel="preload" href="fonts/bebas-neue-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-    <link rel="preload" href="fonts/bebas-neue-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-    <link rel="preload" href="fonts/roboto-condensed.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-    <link rel="preload" href="fonts/roboto-condensed-light.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-    <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body class="page__body page-body">
-    <div class="page-body__wrapper">
-      <header class="page-header">
-        <div class="page-header__wrapper">
-          <a class="page-header__logo" href="#." aria-label="Логотип фитнес-центра.">
-            <svg width="89" height="20">
-              <use xlink:href="img/sprite_auto.svg#logo-supergym"></use>
-            </svg>
-          </a>
-          <a class="page-header__phone" href="tel:88005555555">
-            <span>8-800-555-55-55</span>
-          </a>
-        </div>
-      </header>
-      <main class="main">
-        <header class="inner-header inner-header--background">
-          <div class="inner-header__wrapper">
-            <div class="inner-header__wrapper-headline">
-              <h1>Фитнес центр</h1>
-              <p>Омск</p>
-              <ul class="inner-header__list inner-header__list--position">
-                <li class="inner-header__item">Тренажёрный зал</li>
-                <li class="inner-header__item">Групповые занятия</li>
-                <li class="inner-header__item">Кардио-зона</li>
-              </ul>
-              <a class="inner-header__button button" href="#">
-                Купить абонемент
-              </a>
-            </div>
-            <div class="inner-header__image">
-              <picture>
-                <source type="image/webp" srcset="img//main-trainer.webp 1x, img//main-trainer@2x.webp 2x">
-                <!-- 1х: 500x556px; 2x: 1000x1112px -->
-                <img src="img/main-trainer.jpg" srcset="img/main-trainer@2x.jpg 2x" width="500" height="556" alt="Фитнес-инструктор в футболке с логотипом Супермена.">
-              </picture>
-            </div>
 
-            <ul class="inner-header__list socials">
-              <li class="socials__item">
-                <a class="socials__link" href="#" aria-label="Страница фитнес-центра в Facebook.">
-                  <span>FB</span>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a class="socials__link" href="#" aria-label="Страница фитнес-центра в Vkontakte.">
-                  <span>VK</span>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a class="socials__link" href="#" aria-label="Страница фитнес-центра в Instagram.">
-                  <span>IG</span>
-                </a>
-              </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>Fitness Centre</title>
+  <link rel="preload" href="fonts/bebas-neue-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/bebas-neue-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/roboto-condensed.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/roboto-condensed-light.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body page-body">
+  <div class="page-body__wrapper">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#." aria-label="Логотип фитнес-центра.">
+          <svg width="89" height="20">
+            <use xlink:href="img/sprite_auto.svg#logo-supergym"></use>
+          </svg>
+        </a>
+        <a class="page-header__phone" href="tel:88005555555">
+          <span>8-800-555-55-55</span>
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <header class="inner-header inner-header--background">
+        <div class="inner-header__wrapper">
+          <div class="inner-header__wrapper-headline">
+            <h1>Фитнес центр</h1>
+            <p>Омск</p>
+            <ul class="inner-header__list inner-header__list--position">
+              <li class="inner-header__item">Тренажёрный зал</li>
+              <li class="inner-header__item">Групповые занятия</li>
+              <li class="inner-header__item">Кардио-зона</li>
             </ul>
+            <a class="inner-header__button button" href="#">
+              Купить абонемент
+            </a>
           </div>
-        </header>
-
-        <!-- Тренажёрный зал -->
-
-        <section class="main__intro intro">
-          <!-- .is-hidden воспроизвести видео-->
-          <div class="intro__description">
-            <h2>Тренажерный зал</h2>
-            <h3>Просторный зал площадью 900 кв/м</h3>
-            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал
-              оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько
-              оборудованных залов для различных видов групповых занятий.</p>
-          </div>
-          <div class="intro__img">
+          <div class="inner-header__image">
             <picture>
-              <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
-              <!-- 1х: 660x401px; 2x: 1320x802px -->
-              <img src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401"
-                alt="Тренажерный зал.">
+              <source type="image/webp" srcset="img//main-trainer.webp 1x, img//main-trainer@2x.webp 2x">
+              <!-- 1х: 500x556px; 2x: 1000x1112px -->
+              <img src="img/main-trainer.jpg" srcset="img/main-trainer@2x.jpg 2x" width="500" height="556"
+                alt="Фитнес-инструктор в футболке с логотипом Супермена.">
             </picture>
           </div>
-          <!-- .is-played воспроизвести видео-->
-          <div class="intro__video video">
-            <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" title="Видео-обзор тренажёрного зала."
-              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-            <div class="video__image"></div>
-            <button class="video__button-play" type="button"></button>
-          </div>
-        </section>
 
-        <!-- Абонементы -->
+          <ul class="inner-header__list socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Страница фитнес-центра в Facebook.">
+                <span>FB</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Страница фитнес-центра в Vkontakte.">
+                <span>VK</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Страница фитнес-центра в Instagram.">
+                <span>IG</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
 
-        <section class="catalog catalog--background">
-          <div class="catalog__wrapper">
-            <h2>Абонементы</h2>
-            <!-- is-active для активной кнопки -->
-            <ul class="catalog__list choice-month">
-              <li class="choice-month__item">
-                <button class="choice-month__button" month="month" type="button">1 месяц</button>
-              </li>
-              <li class="choice-month__item">
-                <button class="choice-month__button" month="half-year" type="button">6 месяцев</button>
-              </li>
-              <li class="choice-month__item">
-                <button class="choice-month__button" month="year" type="button">12 месяцев</button>
-              </li>
-            </ul>
-            <ul class="catalog__list choice-subscription">
-              <li class="choice-subscription__item">
-                <h3>С тренером</h3>
-                <p>12 занятий</p>
-                <div class="choice-subscription__price">
-                  <p half-year="28500" year="55000" month="5000">5000</p>
-                  <span>5000</span>
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite_auto.svg#ruble"></use>
-                  </svg>
-                </div>
-                <a class="choice-subscription__button button" href="#">Купить абонемент</a>
-              </li>
-              <li class="choice-subscription__item">
-                <h3>Дневной</h3>
-                <p>с 8:00 до 17:00</p>
-                <div class="choice-subscription__price">
-                  <p half-year="9700" year="18700" month="1700">1700</p>
-                  <span>1700</span>
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite_auto.svg#ruble"></use>
-                  </svg>
-                </div>
-                <a class="choice-subscription__button button" href="#">Купить абонемент</a>
-              </li>
-              <li class="choice-subscription__item">
-                <h3>Полный день</h3>
-                <p>с 8:00 до 22:00</p>
-                <div class="choice-subscription__price">
-                  <p half-year="15400" year="29700" month="2700">2700</p>
-                  <span>2700</span>
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite_auto.svg#ruble"></use>
-                  </svg>
-                </div>
-                <a class="choice-subscription__button button" href="#">Купить абонемент</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="promo">
-          <h2 class="visually-hidden">Реклама предстоящих событий фитнес-центра</h2>
-          <div class="promo__wrapper">
-            <div class="promo__info">
-              <div class="promo__info-wrapper">
-                <h2>SUPER GAMES</h2>
-                <p>Ежегодные соревнования по CrossFit</p>
-                <dl class="promo__list">
-                  <dt class="promo__item">Дата</dt>
-                  <dd class="promo__definition promo__definition--date">
-                    <span>7</span>
-                    <span>Марта 2019</span>
-                  </dd>
-                  <dt class="promo__item">Время</dt>
-                  <dd class="promo__definition"><span>12:00</span></dd>
-                </dl>
-                <a class="promo__button button" href="#">заполнить заявку</a>
+      <!-- Тренажёрный зал -->
+
+      <section class="main__intro intro">
+        <!-- .is-hidden воспроизвести видео-->
+        <div class="intro__description">
+          <h2>Тренажерный зал</h2>
+          <h3>Просторный зал площадью 900 кв/м</h3>
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+            Тренажерный зал
+            оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+            несколько
+            оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+        <div class="intro__img">
+          <picture>
+            <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
+            <!-- 1х: 660x401px; 2x: 1320x802px -->
+            <img src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401"
+              alt="Тренажерный зал.">
+          </picture>
+        </div>
+        <!-- .is-played воспроизвести видео-->
+        <div class="intro__video video">
+          <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" title="Видео-обзор тренажёрного зала." frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="video__image"></div>
+          <button class="video__button-play" type="button"></button>
+        </div>
+      </section>
+
+      <!-- Абонементы -->
+
+      <section class="catalog catalog--background">
+        <div class="catalog__wrapper">
+          <h2>Абонементы</h2>
+          <!-- is-active для активной кнопки -->
+          <ul class="catalog__list choice-month">
+            <li class="choice-month__item">
+              <button class="choice-month__button" month="month" type="button">1 месяц</button>
+            </li>
+            <li class="choice-month__item">
+              <button class="choice-month__button" month="half-year" type="button">6 месяцев</button>
+            </li>
+            <li class="choice-month__item">
+              <button class="choice-month__button" month="year" type="button">12 месяцев</button>
+            </li>
+          </ul>
+          <ul class="catalog__list choice-subscription">
+            <li class="choice-subscription__item">
+              <h3>С тренером</h3>
+              <p>12 занятий</p>
+              <div class="choice-subscription__price">
+                <p half-year="28500" year="55000" month="5000">5000</p>
+                <span>5000</span>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                </svg>
               </div>
-            </div>
-            <div class="promo__image">
-              <picture>
-                <source type="image/webp" srcset="img/application-trainer-desktop.webp 1x, img/application-trainer-desktop@2x.webp 2x"
-                  data-srcset-desktop="img/application-trainer-desktop.webp 1x, img/application-trainer-desktop@2x.webp 2x"
-                  data-srcset-tablet="img/application-trainer-tablet.webp 1x, img/application-trainer-tablet@2x.webp 2x"
-                  data-srcset-mobile="img/application-trainer-mobile.webp 1x, img/application-trainer-mobile@2x.webp 2x">
-                <!-- 1х: 660x500px; 2x: 1320x1000px -->
-                <img src="img/application-trainer-desktop.jpg" data-src-mobile="img/application-trainer-mobile.jpg"
-                  data-src-tablet="img/application-trainer-tablet.jpg" data-src-desktop="img/application-trainer-desktop.jpg"
-                  srcset="img/application-trainer-desktop@2x.jpg 2x"
-                  data-srcset-desktop="img/catalog/application-trainer-desktop@2x.jpg 2x"
-                  data-srcset-tablet="img/application-trainer-tablet@2x.jpg 2x"
-                  data-srcset-mobile="img/application-trainer-mobile@2x.jpg 2x" width="660" height="500"
-                  alt="Фитнес-инструктор в облаке спортивной магнезии.">
-              </picture>
+              <a class="choice-subscription__button button" href="#">Купить абонемент</a>
+            </li>
+            <li class="choice-subscription__item">
+              <h3>Дневной</h3>
+              <p>с 8:00 до 17:00</p>
+              <div class="choice-subscription__price">
+                <p half-year="9700" year="18700" month="1700">1700</p>
+                <span>1700</span>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                </svg>
+              </div>
+              <a class="choice-subscription__button button" href="#">Купить абонемент</a>
+            </li>
+            <li class="choice-subscription__item">
+              <h3>Полный день</h3>
+              <p>с 8:00 до 22:00</p>
+              <div class="choice-subscription__price">
+                <p half-year="15400" year="29700" month="2700">2700</p>
+                <span>2700</span>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                </svg>
+              </div>
+              <a class="choice-subscription__button button" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="promo">
+        <h2 class="visually-hidden">Реклама предстоящих событий фитнес-центра</h2>
+        <div class="promo__wrapper">
+          <div class="promo__info">
+            <div class="promo__info-wrapper">
+              <h2>SUPER GAMES</h2>
+              <p>Ежегодные соревнования по CrossFit</p>
+              <dl class="promo__list">
+                <dt class="promo__item">Дата</dt>
+                <dd class="promo__definition promo__definition--date">
+                  <span>7</span>
+                  <span>Марта 2019</span>
+                </dd>
+                <dt class="promo__item">Время</dt>
+                <dd class="promo__definition"><span>12:00</span></dd>
+              </dl>
+              <a class="promo__button button" href="#">заполнить заявку</a>
             </div>
           </div>
-        </section>
+          <div class="promo__image">
+            <picture>
+              <source type="image/webp"
+                srcset="img/application-trainer-desktop.webp 1x, img/application-trainer-desktop@2x.webp 2x"
+                data-srcset-desktop="img/application-trainer-desktop.webp 1x, img/application-trainer-desktop@2x.webp 2x"
+                data-srcset-tablet="img/application-trainer-tablet.webp 1x, img/application-trainer-tablet@2x.webp 2x"
+                data-srcset-mobile="img/application-trainer-mobile.webp 1x, img/application-trainer-mobile@2x.webp 2x">
+              <!-- 1х: 660x500px; 2x: 1320x1000px -->
+              <img src="img/application-trainer-desktop.jpg" data-src-mobile="img/application-trainer-mobile.jpg"
+                data-src-tablet="img/application-trainer-tablet.jpg"
+                data-src-desktop="img/application-trainer-desktop.jpg"
+                srcset="img/application-trainer-desktop@2x.jpg 2x"
+                data-srcset-desktop="img/catalog/application-trainer-desktop@2x.jpg 2x"
+                data-srcset-tablet="img/application-trainer-tablet@2x.jpg 2x"
+                data-srcset-mobile="img/application-trainer-mobile@2x.jpg 2x" width="660" height="500"
+                alt="Фитнес-инструктор в облаке спортивной магнезии.">
+            </picture>
+          </div>
+        </div>
+      </section>
 
-        <!-- Преимущества -->
+      <!-- Преимущества -->
 
-        <section class="advantages">
-          <div class="advantages__wrapper">
-            <h2>Наши преимущества</h2>
-            <ul class="advantages__list">
-              <li>
+      <section class="advantages advantages--background">
+        <div class="advantages__wrapper">
+          <h2>Наши преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--differ">
+              <div class="advantages__description">
+                <h3 class="visually-hidden">Тренажеры</h3>
+                <p>Современные тренажеры на все группы мышц</p>
+              </div>
+              <span>100
+                <span>Тренажеров</span>
+              </span>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__description">
                 <h3>Площадь</h3>
-                <span>900
-                  <span>кв/м</span>
-                </span>
                 <p>Занимайтесь без очередей и толкучки</p>
-              </li>
-              <li>
+              </div>
+              <span>900
+                <span>кв/м</span>
+              </span>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__description">
                 <h3>Собственная парковка</h3>
-                <span>70
-                  <span>машин</span>
-                </span>
                 <p>Вы всегда найдете место для своей машины на нашей парковке</p>
-              </li>
-              <li>
+              </div>
+              <span>70
+                <span>машин</span>
+              </span>
+            </li>
+
+            <li class="advantages__item">
+              <div class="advantages__description">
                 <h3>Комфорт</h3>
-                <span>350
-                  <span>мест</span>
-                </span>
                 <p>Просторные раздевалки,
                   душевые, фен, Wi-Fi, кулеры</p>
-              </li>
-              <li>
+              </div>
+              <span>350
+                <span>мест</span>
+              </span>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__description">
                 <h3>Тренерский опыт</h3>
-                <span>5+
-                  <span>лет</span>
-                </span>
                 <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-              </li>
-              <li>
-                <h3 class="visually-hidden">Тренажеры</h3>
-                <span>100
-                  <span>Тренажеров</span>
-                </span>
-                <p>Современные тренажеры на все группы мышц</p>
-              </li>
-            </dl>
-          </div>
-        </section>
+              </div>
+              <span>5+
+                <span>лет</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- Акции -->
+      <!-- Акции -->
 
-        <section class="discounts">
-          <div class="discounts__wrapper">
-            <h2>Акции</h2>
-            <ul class="discounts__list discounts-offer">
-              <li class="discounts-offer__item discounts-offer__item--super-offer">
-                <div class="discounts-offer__wrapper-info">
-                  <h3>Год <span>4999</span></h3>
-                  <p>Безлимитный абонемент в тренажерный зал</p>
-                  <a class="discounts-offer__button button" href="#">Подробнее</a>
-                </div>
-                <div class="discounts-offer__image">
-                  <picture>
-                    <source type="image/webp"
-                      srcset="img/discount-trainer-desktop.webp 1x, img/discount-trainer-desktop@2x.webp 2x"
-                      data-srcset-desktop="img/discount-trainer-desktop.webp 1x, img/discount-trainer-desktop@2x.webp 2x"
-                      data-srcset-tablet="img/discount-trainer-tablet.webp 1x, img/discount-trainer-tablet@2x.webp 2x"
-                      data-srcset-mobile="img/discount-trainer-mobile.webp 1x, img/discount-trainer-mobile@2x.webp 2x">
-                    <!-- 1х: 280x462px; 2x: 560x924px -->
-                    <img src="img/discount-trainer-desktop.jpg" data-src-mobile="img/discount-trainer-mobile.jpg"
-                      data-src-tablet="img/discount-trainer-tablet.jpg" data-src-desktop="img/discount-trainer-desktop.jpg"
-                      srcset="img/discount-trainer-desktop@2x.jpg 2x"
-                      data-srcset-desktop="img/catalog/discount-trainer-desktop@2x.jpg 2x"
-                      data-srcset-tablet="img/discount-trainer-tablet@2x.jpg 2x"
-                      data-srcset-mobile="img/discount-trainer-mobile@2x.jpg 2x" width="660" height="500"
-                      alt="Фитнес-инструктор в облаке спортивной магнезии.">
-                  </picture>
-                </div>
-              </li>
-              <li class="discounts-offer__item">
-                <h3>Месяц бесплатно</h3>
-                <p>Приведи друга, получи абонемент в подарок</p>
+      <section class="discounts">
+        <div class="discounts__wrapper">
+          <h2>Акции</h2>
+          <ul class="discounts__list discounts-offer">
+            <li class="discounts-offer__item discounts-offer__item--super-offer">
+              <div class="discounts-offer__wrapper-info">
+                <h3>Год <span>4999</span></h3>
+                <p>Безлимитный абонемент в тренажерный зал</p>
                 <a class="discounts-offer__button button" href="#">Подробнее</a>
-              </li>
-              <li class="discounts-offer__item">
-                <h3>Скидка 20%</h3>
-                <p>Корпоративный фитнес с командой</p>
-                <a class="discounts-offer__button button" href="#">Подробнее</a>
-              </li>
-            </ul>
-          </div>
-        </section>
+              </div>
+              <div class="discounts-offer__image">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/discount-trainer-desktop.webp 1x, img/discount-trainer-desktop@2x.webp 2x"
+                    data-srcset-desktop="img/discount-trainer-desktop.webp 1x, img/discount-trainer-desktop@2x.webp 2x"
+                    data-srcset-tablet="img/discount-trainer-tablet.webp 1x, img/discount-trainer-tablet@2x.webp 2x"
+                    data-srcset-mobile="img/discount-trainer-mobile.webp 1x, img/discount-trainer-mobile@2x.webp 2x">
+                  <!-- 1х: 280x462px; 2x: 560x924px -->
+                  <img src="img/discount-trainer-desktop.jpg" data-src-mobile="img/discount-trainer-mobile.jpg"
+                    data-src-tablet="img/discount-trainer-tablet.jpg"
+                    data-src-desktop="img/discount-trainer-desktop.jpg" srcset="img/discount-trainer-desktop@2x.jpg 2x"
+                    data-srcset-desktop="img/catalog/discount-trainer-desktop@2x.jpg 2x"
+                    data-srcset-tablet="img/discount-trainer-tablet@2x.jpg 2x"
+                    data-srcset-mobile="img/discount-trainer-mobile@2x.jpg 2x" width="660" height="500"
+                    alt="Фитнес-инструктор в облаке спортивной магнезии.">
+                </picture>
+              </div>
+            </li>
+            <li class="discounts-offer__item">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент в подарок</p>
+              <a class="discounts-offer__button button" href="#">Подробнее</a>
+            </li>
+            <li class="discounts-offer__item">
+              <h3>Скидка 20%</h3>
+              <p>Корпоративный фитнес с командой</p>
+              <a class="discounts-offer__button button" href="#">Подробнее</a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-      </main>
-    </div>
+    </main>
+
     <footer class="page-footer">
       <div class="page-footer__wrapper-background">
         <div class="page-footer__wrapper-contact">
@@ -300,8 +318,8 @@
               <form class="feedback__form form" action="https://echo.htmlacademy.ru/">
                 <div class="form__wrapper-input">
                   <label class="visually-hidden" for="form-name">name</label>
-                  <input id="form-name" type="text" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?{1,}"
-                    name="name" required>
+                  <input id="form-name" type="text" placeholder="Имя"
+                    pattern="[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?{1,}" name="name" required>
                   <label class="visually-hidden" for="form-phone">phone</label>
                   <input id="form-phone" type="tel" placeholder="Телефон" name="phone" pattern="[0-9]{1,12}" required>
                 </div>
@@ -340,62 +358,67 @@
       </div>
 
 
-      <section class="page-footer__main-content footer-main">
+      <section class="page-footer__main-content footer-main footer-main--background">
         <div class="footer-main__wrapper">
-          <a class="footer-main__logo" href="#." aria-label="Логотип фитнес-центра.">
-            <svg width="89" height="20">
-              <use xlink:href="img/sprite_auto.svg#logo-supergym"></use>
-            </svg>
-            <ul class="footer-main__list">
-              <li class="footer-main__item">
-                <a href="#" class="footer-main__link">Услуги</a>
+          <div class="footer-main__navigation navigation">
+            <a class="navigation__logo" href="#." aria-label="Логотип фитнес-центра.">
+              <svg width="89" height="20">
+                <use xlink:href="img/sprite_auto.svg#logo-supergym"></use>
+              </svg>
+            </a>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Услуги</a>
               </li>
-              <li class="footer-main__item">
-                <a href="#" class="footer-main__link">Абонементы</a>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Абонементы</a>
               </li>
-              <li class="footer-main__item">
-                <a href="#" class="footer-main__link">Акции</a>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Акции</a>
               </li>
-              <li class="footer-main__item">
-                <a href="#" class="footer-main__link">Тренеры</a>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Тренеры</a>
               </li>
-              <li class="footer-main__item">
-                <a href="#" class="footer-main__link">Расписание</a>
-              </li>
-            </ul>
-            <ul class="footer-main__list socials">
-              <li class="socials__item">
-                <a class="socials__link socials__link--vkontakte" href="#"
-                  aria-label="Страница компании Smart Device в Facebook.">
-                  <svg width="25" height="25">
-                    <use xlink:href="img/sprite_auto.svg#vkontakte"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a class="socials__link socials__link--odnoklassniki" href="#"
-                  aria-label="Страница компании Smart Device в Facebook.">
-                  <svg width="25" height="25">
-                    <use xlink:href="img/sprite_auto.svg#odnoklassniki"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a class="socials__link socials__link--reddit" href="#"
-                  aria-label="Страница компании Smart Device в Reddit.">
-                  <svg width="25" height="25">
-                    <use xlink:href="img/sprite_auto.svg#reddit"></use>
-                  </svg>
-                </a>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Расписание</a>
               </li>
             </ul>
+          </div>
+          <ul class="footer-main__list footer-socials">
+            <li class="footer-socials__item">
+              <a class="footer-socials__link footer-socials__link--vkontakte" href="#"
+                aria-label="Страница компании Smart Device в Facebook.">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite_auto.svg#vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials__item">
+              <a class="footer-socials__link footer-socials__link--odnoklassniki" href="#"
+                aria-label="Страница компании Smart Device в Facebook.">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite_auto.svg#odnoklassniki"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials__item">
+              <a class="footer-socials__link footer-socials__link--reddit" href="#"
+                aria-label="Страница компании Smart Device в Reddit.">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite_auto.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
           </a>
         </div>
       </section>
     </footer>
+  </div>
 
 
-    <!-- <script src="js/vendor.min.js"></script> -->
-    <script src="js/main.min.js"></script>
-  </body>
+  <!-- <script src="js/vendor.min.js"></script> -->
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
