@@ -1,0 +1,177 @@
+.fitness-trainers__wrapper {
+  padding: 120px 0;
+  margin: 0 auto;
+  max-width: #{"min(100%, 1366px)"};
+  // max-width: 100%;
+  width: 100%;
+
+  @media (max-width: $vp-1199) {
+    padding: 100px 0;
+    // max-width: #{"min(88.2%, 1105px)"};
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 0;
+    // max-width: #{"min(90.6%, 630px)"};
+  }
+}
+
+.fitness-trainers__wrapper h2 {
+  margin: 0;
+  margin-bottom: 62px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-sapphire;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 50px;
+    font-size: 42px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 32px;
+  }
+}
+
+.fitness-trainers__list {
+  padding: 0;
+  margin: 0 auto;
+  max-width: #{"min(86%, 1160px)"};
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  list-style: none;
+
+  @media (max-width: $vp-1199) {
+    max-width: #{"min(73.6%, 1100px)"};
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: #{"min(70.6%, 678px)"};
+    grid-template-columns: 1fr;
+  }
+}
+
+.fitness-trainers__item {
+  position: relative;
+  padding: 25px 0 15px;
+  max-width: 260px;
+  height: 294px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media (max-width: $vp-1199) {
+    width: 100%;
+    max-width: 268px;
+    justify-self: center;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 226px;
+  }
+}
+
+.fitness-trainers__item h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: $color-default-white;
+
+  @media (max-width: $vp-1199) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $vp-767) {
+  }
+}
+
+.fitness-trainers__item p {
+  display: none;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $color-spindle;
+
+  @media (max-width: $vp-1199) {
+  }
+
+  @media (max-width: $vp-767) {
+  }
+}
+
+.fitness-trainers__item:hover p {
+  display: block;
+}
+
+.fitness-trainers__item img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+  @media (max-width: $vp-1199) {
+  }
+
+  @media (max-width: $vp-767) {
+  }
+}
+
+.fitness-trainers__button {
+  position: relative;
+  padding: 30px;
+  width: 47px;
+  height: 294px;
+  background: transparent;
+  border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    border: 1px solid $color-dark-gray;
+    border-width: 0 1px 1px 0;
+    padding: 8px;
+  }
+
+  &--next {
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--prev {
+    &::before {
+      transform: rotate(135deg);
+    }
+  }
+
+  @media (max-width: $vp-1199) {
+  }
+
+  @media (max-width: $vp-767) {
+    height: 274px;
+
+    &::before {
+      padding: 5px;
+    }
+  }
+}

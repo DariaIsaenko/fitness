@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -30,15 +30,20 @@
 @import "blocks/promo";
 @import "blocks/discounts";
 @import "blocks/discounts-offer";
+@import "blocks/fitness-trainers";
+@import "blocks/card";
 @import "blocks/advantages";
 @import "blocks/page-footer";
 @import "blocks/feedback";
 @import "blocks/form";
 @import "blocks/form";
 @import "blocks/contacts";
+@import "blocks/reviews";
 @import "blocks/footer-main";
 @import "blocks/navigation";
 @import "blocks/footer-socials";
+
+
 
 
 

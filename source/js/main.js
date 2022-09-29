@@ -83,6 +83,7 @@ function activateElement(element) {
 
 choiceButtons.forEach((element) => element.addEventListener('click', () => activateElement(element)));
 
+
 // // ---------------------------------
 
 // window.addEventListener('DOMContentLoaded', () => {
