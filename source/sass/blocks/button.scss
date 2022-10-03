@@ -1,5 +1,5 @@
 .button {
-  padding: 18px 56px 17px;
+  padding: 18px 52px 17px;
   box-sizing: border-box;
   display: inline-block;
   font-family: "Roboto Condensed", sans-serif;
@@ -8,6 +8,7 @@
   font-size: 12px;
   line-height: 14px;
   border-radius: 3px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   text-align: center;
   color: $color-default-white;
@@ -22,7 +23,7 @@
   }
 
   &:focus {
-    opacity: 0.6;
+    opacity: 0.3;
     outline: none;
   }
 }

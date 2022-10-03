@@ -57,6 +57,16 @@
   background: transparent;
   box-shadow: inset 1px 0 2px 1px $color-torch-red-transparent, inset -1px 0 2px 1px $color-cobalt-transparent;
 
+  &:hover {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:focus {
+    opacity: 0.3;
+    outline: none;
+  }
+
 
   &::before {
     position: absolute;
@@ -72,6 +82,10 @@
       transform: translate(-25px, -25px);
       width: 52px;
       height: 52px;
+    }
+
+    @media (max-width: $vp-767) {
+      transform: translate(-24px, -25px);
     }
   }
 
@@ -91,10 +105,14 @@
       border-left: 10px solid $color-default-white;
       border-bottom: 5px solid transparent;
     }
+
+    @media (max-width: $vp-767) {
+      transform: translate(-1px, -4px);
+    }
   }
 
   @media (max-width: $vp-1199) {
-    transform: translate(-40px, -40px);
+    transform: translate(-38px, -38px);
     padding: 10px 11px 11px 10px;
     width: 73px;
     height: 73px;

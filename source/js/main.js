@@ -1,19 +1,27 @@
-// import {iosVhFix} from './utils/ios-vh-fix';
+import {treinersSliderSettings, reviewsSliderSettings, initSlider} from './utils/swiper-settings';
 
 const mobileVersion = window.matchMedia('(max-width: 767px)');
 const tabletVersion = window.matchMedia('(max-width: 1099px)');
 const videoContainer = document.querySelector('.video');
-// const video = videoContainer.querySelector('iframe');
+const video = videoContainer.querySelector('iframe');
 const videoButton = document.querySelector('.video__button-play');
 const introDescription = document.querySelector('.intro__description');
 const choicePrices = document.querySelectorAll('.choice-subscription__price');
 const choiceButtons = document.querySelectorAll('.choice-month__button');
 
+const trainersSliderBlock = document.querySelector('.fitness-trainers__trainers');
+const reviewsSliderBlock = document.querySelector('.reviews__wrapper-reviews');
+
+
 window.addEventListener('DOMContentLoaded', () => {
   hiddenParagraph();
+  initSlider(trainersSliderBlock, treinersSliderSettings);
+  initSlider(reviewsSliderBlock, reviewsSliderSettings);
+  showImgs();
 });
 
 function showImgs() {
+  showImg(document.querySelector('.intro__img'));
   showImg(document.querySelector('.promo__image'));
   showImg(document.querySelector('.discounts-offer__image'));
 }
@@ -53,6 +61,7 @@ function hiddenParagraph() {
 
 function playVideo() {
   videoContainer.classList.add('is-played');
+  video.src += '?autoplay=1';
 }
 
 videoButton.addEventListener('click', playVideo);
@@ -65,8 +74,8 @@ function deactivateElement(element) {
 
 function showPrices(element) {
   choicePrices.forEach((choicePrice) => {
-    choicePrice.querySelector('p').textContent = choicePrice.querySelector('p').getAttribute(element);
-    choicePrice.querySelector('span').textContent = choicePrice.querySelector('p').getAttribute(element);
+    choicePrice.querySelector('p').textContent = choicePrice.querySelector('p').dataset[element];
+    choicePrice.querySelector('span').textContent = choicePrice.querySelector('p').dataset[element];
   });
 }
 
@@ -74,7 +83,7 @@ function activateElement(element) {
   if (!element.classList.contains('is-active')) {
     choiceButtons.forEach((choiceButton) => deactivateElement(choiceButton));
     element.classList.add('is-active');
-    let month = element.getAttribute('month');
+    let month = element.getAttribute('data-month');
     showPrices(month);
   } else {
     deactivateElement(element);

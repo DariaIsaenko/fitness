@@ -12,6 +12,16 @@
   margin-right: 1px;
   display: inline-block;
 
+  &:hover {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:focus {
+    opacity: 0.3;
+    outline: none;
+  }
+
   @media (max-width: $vp-767) {
     padding: 10px 0 11px;
     margin-right: 10px;

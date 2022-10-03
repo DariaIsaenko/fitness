@@ -16,7 +16,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 45px 0;
+    padding: 36px 0;
     max-width: #{"min(90.7%, 730px)"};
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
 
   @media (max-width: $vp-767) {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     column-count: 2;
     column-gap: 33px;
     max-width: 100%;

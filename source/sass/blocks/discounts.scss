@@ -1,10 +1,10 @@
 .discounts__wrapper {
-  padding: 120px 0 0;
+  padding: 117px 0 0;
   margin: 0 auto;
   max-width: #{"min(84.9%, 1160px)"};
 
   @media (max-width: $vp-1199) {
-    padding: 100px 0 0;
+    padding: 98px 0 0;
     max-width: #{"min(88.2%, 1110px)"};
   }
 
@@ -16,22 +16,25 @@
 
 .discounts__wrapper h2 {
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 52px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
   font-size: 49px;
   line-height: 100%;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   text-align: center;
   color: $color-sapphire;
 
   @media (max-width: $vp-1199) {
-    margin-bottom: 50px;
+    margin-bottom: 41px;
     font-size: 42px;
   }
 
   @media (max-width: $vp-767) {
+    margin-bottom: 43px;
     font-size: 32px;
+    letter-spacing: 1px;
   }
 }
 

@@ -3,7 +3,7 @@
 }
 
 .card--state:hover {
-  padding: 58px 0 15px;
+  padding: 4.2vw 0 0.7vw;
   justify-content: flex-start;
   background: $color-sapphire-card-transparent;
   outline: none;
@@ -15,6 +15,7 @@
   }
 
   @media (max-width: $vp-1199) {
+    padding: 7.3vw 0 0.7vw;
   }
 
   @media (max-width: $vp-767) {
@@ -24,24 +25,28 @@
 
 .card__list {
   padding: 0;
-  padding-left: 16px;
+  padding-left: 1.9vw;
   margin: 0 auto;
-  max-width: #{"min(61%, 160px)"};
+  width: 12.5vw;
   display: flex;
   flex-direction: column;
   list-style: none;
 
   @media (max-width: $vp-1199) {
+    padding-left: 2.2vw;
+    width: 20.8vw;
   }
 
   @media (max-width: $vp-767) {
+    padding-left: 6.2vw;
+    width: 50.94vw;
   }
 }
 
 .card__item {
   position: relative;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -51,17 +56,15 @@
   &::before {
     position: absolute;
     content: "";
-    top: 6px;
-    left: -16px;
+    top: 7px;
+    left: -15px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background: $color-default-white;
-  }
 
-  @media (max-width: $vp-1199) {
-  }
-
-  @media (max-width: $vp-767) {
+    @media (max-width: $vp-1199) {
+      left: -16px;
+    }
   }
 }

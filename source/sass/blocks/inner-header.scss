@@ -3,19 +3,18 @@
 }
 
 .inner-header__wrapper {
-  padding: 51px 0 38px;
+  padding: 51px 0;
   margin: 0 auto;
-  max-width: #{"min(84.9%, 1160px)"};
+  max-width: #{"min(85.1%, 1160px)"};
   display: flex;
 
   @media (max-width: $vp-1199) {
     padding: 82px 0;
     max-width: #{"min(88.2%, 1100px)"};
-    justify-content: space-evenly;
   }
 
   @media (max-width: $vp-767) {
-    padding: 115px 0 80px;
+    padding: 110px 0 79px;
     max-width: #{"min(90.6%, 678px)"};
     justify-content: center;
   }
@@ -26,11 +25,11 @@
   position: relative;
   margin-right: 64px;
   min-width: 377px;
-  max-width: #{"min(32.5%, 377px)"};
+  max-width: #{"min(34.5%, 395px)"};
   display: grid;
 
   @media (max-width: $vp-1199) {
-    padding: 56px 0 25px;
+    padding: 53px 0 25px;
     margin-right: 30px;
     min-width: 324px;
     max-width: #{"min(47.7%, 324px)"};
@@ -47,11 +46,12 @@
 
 .inner-header__wrapper-headline h1 {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
   font-size: 109px;
   line-height: 100%;
+  letter-spacing: 3px;
   text-align: right;
   color: $color-default-white;
   text-transform: uppercase;
@@ -63,6 +63,7 @@
   }
 
   @media (max-width: $vp-767) {
+    margin-bottom: 43px;
     max-width: 213px;
     justify-self: end;
     font-size: 78px;
@@ -71,23 +72,25 @@
 
 .inner-header__wrapper-headline p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 4px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-size: 49px;
   line-height: 58.8px;
+  letter-spacing: 1.5px;
   text-align: right;
   color: $color-default-white;
   text-transform: uppercase;
   grid-row: 1 / 2;
 
   @media (max-width: $vp-1199) {
-    margin-bottom: 8px;
+    margin-bottom: 0;
     font-size: 34px;
-    line-height: 40.8px;
+    line-height: 100%;
   }
 
   @media (max-width: $vp-767) {
+    margin-bottom: 8px;
     font-size: 28px;
     line-height: 33.6px;
   }
@@ -103,23 +106,24 @@
   position: absolute;
   bottom: 50%;
   transform: translate(19px, 90px);
+  max-width: 115px;
   display: flex;
   flex-direction: column;
   align-items: end;
 
   @media (max-width: $vp-1199) {
-    transform: translate(18px, 60px);
+    transform: translateY(54px);
   }
 
   @media (max-width: $vp-767) {
-    transform: translate(5px, 40px);
+    transform: translate(-1px, 36px);
   }
 }
 
 .inner-header__list.socials {
   margin-left: auto;
   max-height: 200px;
-  padding-bottom: 33px;
+  padding-bottom: 34px;
   align-self: flex-end;
 
   @media (max-width: $vp-1199) {
@@ -137,15 +141,16 @@
 
 .inner-header__button {
   justify-self: right;
-  max-width: 230px;
+  width: 230px;
   grid-row: 3 / 4;
 
   @media (max-width: $vp-1199) {
-    padding: 17px 33px 17.5px;
+    padding: 17px 30px 10.5px;
     max-width: 183px;
   }
 
   @media (max-width: $vp-767) {
+    padding: 20px 30px 19.5px;
     justify-self: center;
     max-width: #{"min(100%, 678px)"};
     width: 100%;

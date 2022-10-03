@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
 
     @media (max-width: $vp-1199) {
-      transform: translateY(11px);
+      transform: translateY(53px);
       width: 345px;
       height: 371px;
       background: url("../img/svg/barbell-weight-tablet.svg");
@@ -29,38 +29,41 @@
 
 .catalog__wrapper {
   position: relative;
-  padding: 120px 0;
+  padding: 118px 0;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (max-width: $vp-1199) {
-    padding: 100px 0;
+    padding: 100px 0 60px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 0;
+    padding: 69px 0 37px;
   }
 }
 
 .catalog__wrapper h2 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
   font-size: 49px;
+  line-height: 100%;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   color: $color-sapphire;
 
   @media (max-width: $vp-1199) {
-    margin-bottom: 45px;
+    margin-bottom: 14px;
     font-size: 42px;
   }
 
   @media (max-width: $vp-767) {
-    margin-bottom: 35px;
+    margin-bottom: 7px;
     font-size: 32px;
+    letter-spacing: 1px;
   }
 }
 
@@ -74,30 +77,39 @@
 
 .catalog__list.choice-month {
   margin: 0 auto;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
   max-width: 1160px;
+  border: none;
   border-bottom: 2px solid $color-grey-transparent;
 
   @media (max-width: $vp-1199) {
+    margin-bottom: 44px;
+    min-width: 332px;
+    gap: 55px;
   }
 
   @media (max-width: $vp-767) {
+    margin-bottom: 35px;
+    min-width: 290px;
     max-width: 678px;
+    column-gap: 45px;
+    row-gap: 0;
   }
 }
 
 .catalog__list.choice-subscription {
   justify-content: space-between;
+  row-gap: 40px;
   max-width: #{"min(84.9%, 1160px)"};
   width: 100%;
 
   @media (max-width: $vp-1199) {
-    max-width: #{"min(58.9%, 1110px)"};
+    max-width: #{"min(57.56%, 1110px)"};
     flex-direction: column;
+    row-gap: 0;
   }
 
   @media (max-width: $vp-767) {
     max-width: #{"min(90.6%, 442px)"};
   }
 }
-
