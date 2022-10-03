@@ -2121,12 +2121,11 @@ button,
 }
 
 .choice-subscription__prices.is-nojs .choice-subscription__price:nth-child(n + 2) {
-  display: -ms-grid;
-  display: grid;
+  display: none;
 }
 
 .choice-subscription__prices.is-nojs h4 {
-  display: block;
+  display: none;
 }
 
 .choice-subscription__button {
@@ -3267,6 +3266,7 @@ button,
   margin: 0;
   margin-right: 6px;
   display: inline-block;
+  vertical-align: baseline;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-size: 14px;
