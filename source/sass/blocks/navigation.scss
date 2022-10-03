@@ -1,6 +1,7 @@
 .navigation__logo {
   padding: 15px 4px 10px;
   display: inline-block;
+  vertical-align: baseline;
 
   @media (max-width: $vp-1199) {
     padding: 11px 2px 11px 7px;

@@ -1,5 +1,20 @@
-.card__info {
+.card__list {
   display: none;
+  padding: 0;
+  padding-left: 1.9vw;
+  margin: 0 auto;
+  width: 12.5vw;
+  list-style: none;
+
+  @media (max-width: $vp-1199) {
+    padding-left: 2.2vw;
+    width: 20.8vw;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-left: 6.2vw;
+    width: 50.94vw;
+  }
 }
 
 .card--state:hover {
@@ -8,7 +23,7 @@
   background: $color-sapphire-card-transparent;
   outline: none;
 
-  .card__info {
+  .card__list {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
@@ -20,26 +35,6 @@
 
   @media (max-width: $vp-767) {
     padding: 48px 0 15px;
-  }
-}
-
-.card__list {
-  padding: 0;
-  padding-left: 1.9vw;
-  margin: 0 auto;
-  width: 12.5vw;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-
-  @media (max-width: $vp-1199) {
-    padding-left: 2.2vw;
-    width: 20.8vw;
-  }
-
-  @media (max-width: $vp-767) {
-    padding-left: 6.2vw;
-    width: 50.94vw;
   }
 }
 

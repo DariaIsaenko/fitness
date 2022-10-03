@@ -3,7 +3,7 @@
 }
 
 .advantages__wrapper {
-  padding: 120px 0 117px;
+  padding: 120px 0 119px;
   margin: 0 auto;
   max-width: #{"min(76%, 1038px)"};
 
@@ -20,7 +20,7 @@
 
 .advantages__wrapper h2 {
   margin: 0;
-  margin-bottom: 69px;
+  margin-bottom: 67px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
   font-size: 49px;
@@ -36,7 +36,7 @@
   }
 
   @media (max-width: $vp-767) {
-    // margin-bottom: 57px;
+    margin-bottom: 25px;
     font-size: 32px;
     letter-spacing: 1px;
   }
@@ -58,8 +58,6 @@
   @media (max-width: $vp-767) {
     display: flex;
     flex-direction: column;
-    // column-gap: 0;
-    // row-gap: 40px;
   }
 }
 
@@ -72,8 +70,9 @@
   }
 
   @media (max-width: $vp-767) {
-    margin: 0 auto 30px;
+    padding: 25px 0 13px;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -89,18 +88,20 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 16px 0 0;
-    min-height: 180px;
+    align-items: center;
   }
 }
 
-.advantages__item:nth-child(5n + 5) {
+.advantages__item__title {
+  display: flex;
+  flex-direction: column;
+
   @media (max-width: $vp-767) {
-    padding: 0;
+    margin-bottom: 14px;
   }
 }
 
-.advantages__item p {
+.advantages__item__title p {
   margin: 0;
   margin-right: 30px;
   display: flex;
@@ -113,25 +114,31 @@
   background-clip: text;
   background-image: $cobalt-to-top;
 
-  & span {
-    margin-left: 0;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: $color-persian-blue;
-    background-image: none;
-
-    @media (max-width: $vp-767) {
-      margin: 0 auto;
-    }
-  }
-
   @media (max-width: $vp-1199) {
     font-size: 58px;
   }
 
   @media (max-width: $vp-767) {
-    margin: 0 auto 12px;
+    margin: 0 auto;
+  }
+}
+
+.advantages__item__title span {
+  margin-left: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: $color-persian-blue;
+  background-image: none;
+
+  @media (max-width: $vp-767) {
+    text-align: center;
+  }
+}
+
+.advantages__description {
+  @media (max-width: $vp-767) {
+    max-width: #{"min(71.8%, 600px)"};
   }
 }
 
@@ -141,23 +148,12 @@
     max-width: #{"min(90%, 183px)"};
   }
 
-  p {
+  .advantages__item__title {
     margin-left: auto;
 
     @media (max-width: $vp-1199) {
       margin-left: 0;
     }
-
-    @media (max-width: $vp-767) {
-      margin: 0 auto 13px;
-    }
-  }
-}
-
-.advantages__description {
-  @media (max-width: $vp-767) {
-    margin: 0 auto;
-    max-width: #{"min(71.8%, 600px)"};
   }
 }
 
@@ -176,7 +172,6 @@
   }
 
   @media (max-width: $vp-767) {
-    // margin-bottom: 7px;
     text-align: center;
   }
 }
@@ -200,7 +195,7 @@
 }
 
 .advantages__item--differ {
-  padding: 50px 10px 23px;
+  padding: 48px 27px 30px;
   margin: auto;
   max-width: 240px;
   min-height: 307px;
@@ -218,14 +213,24 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 38px 0 43px;
+    margin: 29px 0 22px;
+    padding: 38px 0 33px;
+    min-height: 239px;
     min-width: 100%;
   }
 }
 
-.advantages__item--differ p {
-  margin: 0;
+.advantages__item__title--differ {
   margin-bottom: 33px;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 13px;
+  }
+}
+
+
+.advantages__item__title--differ p {
+  margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   font-size: 74px;
@@ -234,35 +239,29 @@
   text-align: center;
   color: $color-default-white;
 
-  & span {
-    margin: 0;
-    font-size: 26px;
-    line-height: 150%;
-    color: $color-default-white;
-
-    @media (max-width: $vp-1199) {
-      margin-bottom: 13px;
-      font-size: 22px;
-    }
-  }
-
   @media (max-width: $vp-1199) {
-    margin-bottom: 0;
     font-size: 74px;
     line-height: 100%;
   }
+}
 
-  @media (max-width: $vp-767) {
-    margin-bottom: 3px;
+.advantages__item__title--differ span {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: $color-default-white;
+
+  @media (max-width: $vp-1199) {
+    font-size: 22px;
   }
 }
 
-.advantages__item--differ .advantages__description {
-  // grid-column: 1 / 3;
-  // grid-row: 2 / 3;
-}
-
-.advantages__item--differ .advantages__description p {
+.advantages__description--differ p {
+  max-width: 180px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-size: 16px;

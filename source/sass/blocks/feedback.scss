@@ -46,14 +46,19 @@
 
 .feedback__form {
   max-width: #{"min(86%, 477px)"};
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
 
   @media (max-width: $vp-1199) {
     max-width: #{"min(94%, 900px)"};
+    column-gap: 60px;
   }
 
   @media (max-width: $vp-767) {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }

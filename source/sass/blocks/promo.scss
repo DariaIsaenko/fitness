@@ -15,7 +15,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    // max-width: 100%;
     max-width: #{"min(90.6%, 678px)"};
   }
 }
@@ -182,6 +181,7 @@
 .promo__definition--date span {
   &:nth-last-child(1) {
     display: inline-block;
+    vertical-align: baseline;
     max-width: 50px;
 
     @media (max-width: $vp-1199) {
