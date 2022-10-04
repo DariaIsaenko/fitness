@@ -29,14 +29,14 @@
 
 .catalog__wrapper {
   position: relative;
-  padding: 118px 0;
+  padding: 118px 0 82px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (max-width: $vp-1199) {
-    padding: 100px 0 60px;
+    padding: 100px 0 57px;
   }
 
   @media (max-width: $vp-767) {
@@ -85,28 +85,24 @@
   @media (max-width: $vp-1199) {
     margin-bottom: 44px;
     min-width: 332px;
-    gap: 55px;
   }
 
   @media (max-width: $vp-767) {
     margin-bottom: 35px;
     min-width: 290px;
     max-width: 678px;
-    column-gap: 45px;
-    row-gap: 0;
   }
 }
 
 .catalog__list.choice-subscription {
+  position: relative;
   justify-content: space-between;
-  row-gap: 40px;
   max-width: #{"min(84.9%, 1160px)"};
   width: 100%;
 
   @media (max-width: $vp-1199) {
     max-width: #{"min(57.56%, 1110px)"};
     flex-direction: column;
-    row-gap: 0;
   }
 
   @media (max-width: $vp-767) {

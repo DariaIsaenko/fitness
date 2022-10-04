@@ -7,14 +7,20 @@
 
   @media (max-width: $vp-1199) {
     margin-right: 0;
+    margin-right: 55px;
     font-size: 18px;
     line-height: 27px;
   }
 
   @media (max-width: $vp-767) {
+    margin-right: 45px;
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.choice-month__item:nth-last-child(1) {
+  margin-right: 0;
 }
 
 .choice-month__button {

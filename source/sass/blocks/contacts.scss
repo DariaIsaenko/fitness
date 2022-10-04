@@ -126,7 +126,8 @@
   }
 }
 
-.contacts__item p {
+.contacts__item p,
+.contacts__link {
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
@@ -142,5 +143,17 @@
 
   @media (max-width: $vp-767) {
     padding-left: 0;
+  }
+}
+
+.contacts__link {
+  &:hover {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:focus {
+    opacity: 0.3;
+    outline: none;
   }
 }

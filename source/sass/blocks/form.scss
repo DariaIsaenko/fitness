@@ -1,6 +1,7 @@
 .form input {
   padding: 14px 0 6px;
   min-width: 160px;
+  color: $color-default-white;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid $color-light-slate-grey;
@@ -11,7 +12,6 @@
   }
 
   &:focus {
-    opacity: 0.3;
     outline: none;
   }
 

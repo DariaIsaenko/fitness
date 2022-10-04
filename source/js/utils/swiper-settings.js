@@ -28,8 +28,8 @@ const reviewsSliderSettings = {
   slidesPerView: 'auto',
   spaceBetween: 30,
   navigation: {
-    nextEl: '.review__button--next',
-    prevEl: '.review__button--prev',
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
   },
 };
 

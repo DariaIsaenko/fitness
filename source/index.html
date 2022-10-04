@@ -89,27 +89,29 @@
             несколько
             оборудованных залов для различных видов групповых занятий.</p>
         </div>
+        <!-- div.intro -->
         <div class="intro__img">
           <picture>
-            <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x" data-srcset-desktop="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x"
-            data-srcset-tablet="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x"
-            data-srcset-mobile="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x"
+              data-srcset-desktop="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x"
+              data-srcset-tablet="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x"
+              data-srcset-mobile="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
             <!-- 1х: 660x401px; 2x: 1320x802px -->
-            <img src="img/gym-desktop.jpg" data-src-mobile="img/gym-mobile.jpg"
-            data-src-tablet="img/gym-tablet.jpg"
-            data-src-desktop="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x"  data-srcset-desktop="img/gym-desktop@2x.jpg 2x"
-            data-srcset-tablet="img/gym-tablet@2x.jpg 2x"
-            data-srcset-mobile="img/gym-mobile@2x.jpg 2x" width="660" height="401"
-              alt="Тренажерный зал.">
+            <img src="img/gym-desktop.jpg" data-src-mobile="img/gym-mobile.jpg" data-src-tablet="img/gym-tablet.jpg"
+              data-src-desktop="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x"
+              data-srcset-desktop="img/gym-desktop@2x.jpg 2x" data-srcset-tablet="img/gym-tablet@2x.jpg 2x"
+              data-srcset-mobile="img/gym-mobile@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал.">
           </picture>
-        </div>
-        <!-- .is-played воспроизвести видео-->
-        <div class="intro__video video">
-          <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" title="Видео-обзор тренажёрного зала."
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen tabindex="-1"></iframe>
-          <div class="video__image"></div>
-          <button class="video__button-play" type="button"></button>
+          <!-- .is-played воспроизвести видео-->
+          <div class="intro__video video">
+            <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" title="Видео-обзор тренажёрного зала."
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+              tabindex="-1"></iframe>
+            <div class="video__image"></div>
+            <button class="video__button-play" type="button">
+              <span class="visually-hidden">Включить видео</span>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -118,7 +120,9 @@
       <section class="catalog catalog--background" id="catalog">
         <div class="catalog__wrapper">
           <h2>Абонементы</h2>
-          <!-- is-active для активной кнопки -->
+
+          <!-- is-active активный таб -->
+
           <ul class="catalog__list choice-month">
             <li class="choice-month__item">
               <button class="choice-month__button is-active" data-month="month" type="button">1&nbsp;месяц</button>
@@ -130,100 +134,124 @@
               <button class="choice-month__button" data-month="year" type="button">12&nbsp;месяцев</button>
             </li>
           </ul>
-          <ul class="catalog__list choice-subscription">
-            <li class="choice-subscription__item" tabindex="0">
-              <h3>С&nbsp;тренером</h3>
+
+          <!-- is-nojs для состояния без js
+              is-opened открыть таб
+              is-hidden скрыть таб -->
+
+          <ul class="catalog__list choice-subscription is-opened is-nojs" data-month>
+            <li class="choice-subscription__item">
+              <h3>1&nbsp;месяц</h3>
+              <h4>С&nbsp;тренером</h4>
               <p>12&nbsp;занятий</p>
-              <!-- is-active для состояния без js -->
-              <div class="choice-subscription__prices is-nojs">
-                <div class="choice-subscription__price choice-subscription__price--month">
-                  <h4>1&nbsp;месяц</h4>
-                  <p data-half="28500" data-year="55000" data-month="5000">5000</p>
-                  <span>5000</span>
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite_auto.svg#ruble"></use>
-                  </svg>
-                </div>
-                <div class="choice-subscription__price choice-subscription__price--half">
-                  <h4>6&nbsp;месяцев</h4>
-                  <p>28500</p>
-                  <span>28500</span>
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite_auto.svg#ruble"></use>
-                  </svg>
-                </div>
-                <div class="choice-subscription__price choice-subscription__price--year">
-                  <h4>12&nbsp;месяцев</h4>
-                  <p>55000</p>
-                  <span>55000</span>
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite_auto.svg#ruble"></use>
-                  </svg>
-                </div>
+              <div class="choice-subscription__price">
+                <p>5000</p>
+                <span>5000</span>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                </svg>
               </div>
               <a class="choice-subscription__button button" href="#">Купить абонемент</a>
             </li>
-            <li class="choice-subscription__item" tabindex="0">
-              <h3>Дневной</h3>
+            <li class="choice-subscription__item">
+              <h4>Дневной</h4>
               <p>с&nbsp;8:00 до&nbsp;17:00</p>
-              <!-- is-active для состояния без js -->
-              <div class="choice-subscription__prices is-nojs">
-                <div class="choice-subscription__price choice-subscription__price--month">
-                  <h4>1&nbsp;месяц</h4>
-                  <p data-half="9700" data-year="18700" data-month="1700">1700</p>
-                  <span>1700</span>
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite_auto.svg#ruble"></use>
-                  </svg>
-                </div>
-                <div class="choice-subscription__price choice-subscription__price--half">
-                  <h4>6&nbsp;месяцев</h4>
-                  <p>9700</p>
-                  <span>9700</span>
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite_auto.svg#ruble"></use>
-                  </svg>
-                </div>
-                <div class="choice-subscription__price choice-subscription__price--year">
-                  <h4>12&nbsp;месяцев</h4>
-                  <p>18700</p>
-                  <span>18700</span>
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite_auto.svg#ruble"></use>
-                  </svg>
-                </div>
+              <div class="choice-subscription__price">
+                <p>1700</p>
+                <span>1700</span>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                </svg>
               </div>
               <a class="choice-subscription__button button" href="#">Купить абонемент</a>
             </li>
-            <li class="choice-subscription__item" tabindex="0">
-              <h3>Полный день</h3>
+            <li class="choice-subscription__item">
+              <h4>Полный день</h4>
               <p>с&nbsp;8:00 до&nbsp;22:00</p>
-              <!-- is-active для состояния без js -->
-              <div class="choice-subscription__prices is-nojs">
-                <div class="choice-subscription__price choice-subscription__price--month">
-                  <h4>1&nbsp;месяц</h4>
-                  <p data-half="15400" data-year="29700" data-month="2700">2700</p>
-                  <span>2700</span>
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite_auto.svg#ruble"></use>
-                  </svg>
-                </div>
-                <div class="choice-subscription__price choice-subscription__price--half">
-                  <h4>6&nbsp;месяцев</h4>
-                  <p>15400</p>
-                  <span>15400</span>
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite_auto.svg#ruble"></use>
-                  </svg>
-                </div>
-                <div class="choice-subscription__price choice-subscription__price--year">
-                  <h4>12&nbsp;месяцев</h4>
-                  <p>29700</p>
-                  <span>29700</span>
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite_auto.svg#ruble"></use>
-                  </svg>
-                </div>
+              <div class="choice-subscription__price">
+                <p>2700</p>
+                <span>2700</span>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                </svg>
+              </div>
+              <a class="choice-subscription__button button" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+          <ul class="catalog__list choice-subscription is-hidden is-nojs" data-half>
+            <li class="choice-subscription__item">
+              <h3>6&nbsp;месяцев</h3>
+              <h4>С&nbsp;тренером</h4>
+              <p>12&nbsp;занятий</p>
+              <div class="choice-subscription__price">
+                <p>28500</p>
+                <span>28500</span>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                </svg>
+              </div>
+              <a class="choice-subscription__button button" href="#">Купить абонемент</a>
+            </li>
+            <li class="choice-subscription__item">
+              <h4>Дневной</h4>
+              <p>с&nbsp;8:00 до&nbsp;17:00</p>
+              <div class="choice-subscription__price">
+                <p>9700</p>
+                <span>9700</span>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                </svg>
+              </div>
+              <a class="choice-subscription__button button" href="#">Купить абонемент</a>
+            </li>
+            <li class="choice-subscription__item">
+              <h4>Полный день</h4>
+              <p>с&nbsp;8:00 до&nbsp;22:00</p>
+              <div class="choice-subscription__price">
+                <p>15400</p>
+                <span>15400</span>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                </svg>
+              </div>
+              <a class="choice-subscription__button button" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+          <ul class="catalog__list choice-subscription is-hidden is-nojs" data-year>
+            <li class="choice-subscription__item">
+              <h3>12&nbsp;месяцев</h3>
+              <h4>С&nbsp;тренером</h4>
+              <p>12&nbsp;занятий</p>
+              <div class="choice-subscription__price">
+                <p>55000</p>
+                <span>55000</span>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                </svg>
+              </div>
+              <a class="choice-subscription__button button" href="#">Купить абонемент</a>
+            </li>
+            <li class="choice-subscription__item">
+              <h4>Дневной</h4>
+              <p>с&nbsp;8:00 до&nbsp;17:00</p>
+              <div class="choice-subscription__price">
+                <p>18700</p>
+                <span>18700</span>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                </svg>
+              </div>
+              <a class="choice-subscription__button button" href="#">Купить абонемент</a>
+            </li>
+            <li class="choice-subscription__item">
+              <h4>Полный день</h4>
+              <p>с&nbsp;8:00 до&nbsp;22:00</p>
+              <div class="choice-subscription__price">
+                <p>29700</p>
+                <span>29700</span>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                </svg>
               </div>
               <a class="choice-subscription__button button" href="#">Купить абонемент</a>
             </li>
@@ -419,8 +447,12 @@
                 </ul>
             </div>
             <div class="fitness-trainers__buttons">
-              <button class="fitness-trainers__button fitness-trainers__button--prev" type="button"></button>
-              <button class="fitness-trainers__button fitness-trainers__button--next" type="button"></button>
+              <button class="fitness-trainers__button fitness-trainers__button--prev" type="button">
+                <span class="visually-hidden">Листать список тренеров назад</span>
+              </button>
+              <button class="fitness-trainers__button fitness-trainers__button--next" type="button">
+                <span class="visually-hidden">Листать список тренеров вперед</span>
+              </button>
             </div>
           </div>
         </div>
@@ -585,8 +617,12 @@
               </ul>
             </div>
             <div class="reviews__buttons">
-              <button class="reviews__button reviews__button--prev" type="button"></button>
-              <button class="reviews__button reviews__button--next" type="button"></button>
+              <button class="reviews__button reviews__button--prev" type="button">
+                <span class="visually-hidden">Показать предыдущий отзыв</span>
+              </button>
+              <button class="reviews__button reviews__button--next" type="button">
+                <span class="visually-hidden">Показать следующий отзыв</span>
+              </button>
             </div>
           </div>
         </div>
@@ -609,7 +645,7 @@
                 <input id="form-name" type="text" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?{1,}" name="name"
                   required>
                 <label class="visually-hidden" for="form-phone">phone</label>
-                <input id="form-phone" type="tel" placeholder="Телефон" name="phone" pattern="[0-9]{1,12}" required>
+                <input id="form-phone" type="tel" placeholder="Телефон" name="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,12}$" required>
                 <button class="form__button button" type="submit">Отправить</button>
               </form>
             </div>
@@ -627,7 +663,7 @@
                 </li>
                 <li class="contacts__item contacts__item--swap">
                   <h3>Телефон:</h3>
-                  <p>8-800-555-55-55</p>
+                  <a class="contacts__link" href="tel:88005555555">8-800-555-55-55</a>
                 </li>
                 <li class="contacts__item">
                   <h3>График работы:</h3>
@@ -635,7 +671,7 @@
                 </li>
                 <li class="contacts__item">
                   <h3>Email:</h3>
-                  <p>omsk@supergym.ru</p>
+                  <a href="mailto:omsk@supergym.ru" class="contacts__link">omsk@supergym.ru</a>
                 </li>
               </ul>
             </div>

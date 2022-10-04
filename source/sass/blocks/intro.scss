@@ -89,6 +89,7 @@
 }
 
 .intro__img {
+  position: relative;
   max-width: #{"min(60%, 660px)"};
   height: 401px;
 
@@ -98,7 +99,6 @@
   }
 
   @media (max-width: $vp-767) {
-    margin-bottom: 40px;
     height: 313px;
   }
 }
@@ -107,18 +107,22 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 40px;
+  }
 }
 
 .intro__video {
   position: absolute;
-  bottom: 115px;
+  bottom: -50%;
   right: 50%;
-  transform: translate(221px, -5px);
+  transform: translate(-28px, -86px);
   width: 364px;
   height: 228px;
 
   @media (max-width: $vp-1199) {
-    transform: translate(50%, 15px);
+    transform: translate(50%, -90px);
     width: 266px;
     height: 167px;
   }

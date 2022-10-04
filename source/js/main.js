@@ -6,9 +6,9 @@ const videoContainer = document.querySelector('.video');
 const video = videoContainer.querySelector('iframe');
 const videoButton = document.querySelector('.video__button-play');
 const introDescription = document.querySelector('.intro__description');
-const choicePrices = document.querySelectorAll('.choice-subscription__price');
+const choiceSubscriptions = document.querySelectorAll('.choice-subscription');
 const choiceButtons = document.querySelectorAll('.choice-month__button');
-const pricesBlocks = document.querySelectorAll('.choice-subscription__prices');
+const pricesBlocks = document.querySelectorAll('.choice-subscription');
 
 const trainersSliderBlock = document.querySelector('.fitness-trainers__trainers');
 const reviewsSliderBlock = document.querySelector('.reviews__wrapper-reviews');
@@ -73,10 +73,19 @@ function deactivateElement(element) {
   element.classList.remove('is-active');
 }
 
-function showPrices(element) {
-  choicePrices.forEach((choicePrice) => {
-    choicePrice.querySelector('p').textContent = choicePrice.querySelector('p').dataset[element];
-    choicePrice.querySelector('span').textContent = choicePrice.querySelector('p').dataset[element];
+function deactivateSubscription(element) {
+  element.classList.remove('is-opened');
+  element.classList.add('is-hidden');
+}
+
+function showSubscribtion(element) {
+  choiceSubscriptions.forEach((choiceSubscription) => {
+    if (choiceSubscription.hasAttribute(`data-${element}`)) {
+      choiceSubscription.classList.remove('is-hidden');
+      choiceSubscription.classList.add('is-opened');
+    } else {
+      deactivateSubscription(choiceSubscription);
+    }
   });
 }
 
@@ -85,7 +94,7 @@ function activateElement(element) {
     choiceButtons.forEach((choiceButton) => deactivateElement(choiceButton));
     element.classList.add('is-active');
     let month = element.getAttribute('data-month');
-    showPrices(month);
+    showSubscribtion(month);
   } else {
     deactivateElement(element);
   }
