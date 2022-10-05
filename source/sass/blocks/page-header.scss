@@ -6,6 +6,7 @@
   max-width: #{"min(84.9%, 1160px)"};
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   background-color: transparent;
 
   @media (max-width: $vp-1199) {
