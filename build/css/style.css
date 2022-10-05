@@ -4066,6 +4066,10 @@ button,
   .page-header__wrapper {
     padding: 0;
     max-width: min(90.6%, 678px);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .page-header__logo {
@@ -4078,6 +4082,8 @@ button,
   }
 
   .page-header__phone {
+    -ms-grid-column-align: right;
+    justify-self: right;
     max-width: 135px;
     font-size: 20px;
   }

@@ -17,6 +17,8 @@
   @media (max-width: $vp-767) {
     padding: 0;
     max-width: #{"min(90.6%, 678px)"};
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -71,6 +73,7 @@
   }
 
   @media (max-width: $vp-767) {
+    justify-self: right;
     max-width: 135px;
     font-size: 20px;
   }
