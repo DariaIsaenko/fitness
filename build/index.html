@@ -89,19 +89,20 @@
             несколько
             оборудованных залов для различных видов групповых занятий.</p>
         </div>
-        <!-- div.intro -->
-        <div class="intro__img">
-          <picture>
-            <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x"
-              data-srcset-desktop="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x"
-              data-srcset-tablet="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x"
-              data-srcset-mobile="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
-            <!-- 1х: 660x401px; 2x: 1320x802px -->
-            <img src="img/gym-desktop.jpg" data-src-mobile="img/gym-mobile.jpg" data-src-tablet="img/gym-tablet.jpg"
-              data-src-desktop="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x"
-              data-srcset-desktop="img/gym-desktop@2x.jpg 2x" data-srcset-tablet="img/gym-tablet@2x.jpg 2x"
-              data-srcset-mobile="img/gym-mobile@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал.">
-          </picture>
+        <div class="intro__show">
+          <div class="intro__img">
+            <picture>
+              <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x"
+                data-srcset-desktop="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x"
+                data-srcset-tablet="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x"
+                data-srcset-mobile="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+              <!-- 1х: 660x401px; 2x: 1320x802px -->
+              <img src="img/gym-desktop.jpg" data-src-mobile="img/gym-mobile.jpg" data-src-tablet="img/gym-tablet.jpg"
+                data-src-desktop="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x"
+                data-srcset-desktop="img/gym-desktop@2x.jpg 2x" data-srcset-tablet="img/gym-tablet@2x.jpg 2x"
+                data-srcset-mobile="img/gym-mobile@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал.">
+            </picture>
+          </div>
           <!-- .is-played воспроизвести видео-->
           <div class="intro__video video">
             <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" title="Видео-обзор тренажёрного зала."
@@ -140,7 +141,7 @@
               is-hidden скрыть таб -->
 
           <ul class="catalog__list choice-subscription is-opened is-nojs" data-month>
-            <li class="choice-subscription__item">
+            <li class="choice-subscription__item" tabindex="0">
               <h3>1&nbsp;месяц</h3>
               <h4>С&nbsp;тренером</h4>
               <p>12&nbsp;занятий</p>
@@ -153,7 +154,7 @@
               </div>
               <a class="choice-subscription__button button" href="#">Купить абонемент</a>
             </li>
-            <li class="choice-subscription__item">
+            <li class="choice-subscription__item" tabindex="0">
               <h4>Дневной</h4>
               <p>с&nbsp;8:00 до&nbsp;17:00</p>
               <div class="choice-subscription__price">
@@ -165,7 +166,7 @@
               </div>
               <a class="choice-subscription__button button" href="#">Купить абонемент</a>
             </li>
-            <li class="choice-subscription__item">
+            <li class="choice-subscription__item" tabindex="0">
               <h4>Полный день</h4>
               <p>с&nbsp;8:00 до&nbsp;22:00</p>
               <div class="choice-subscription__price">
@@ -179,7 +180,7 @@
             </li>
           </ul>
           <ul class="catalog__list choice-subscription is-hidden is-nojs" data-half>
-            <li class="choice-subscription__item">
+            <li class="choice-subscription__item" tabindex="0">
               <h3>6&nbsp;месяцев</h3>
               <h4>С&nbsp;тренером</h4>
               <p>12&nbsp;занятий</p>
@@ -192,7 +193,7 @@
               </div>
               <a class="choice-subscription__button button" href="#">Купить абонемент</a>
             </li>
-            <li class="choice-subscription__item">
+            <li class="choice-subscription__item" tabindex="0">
               <h4>Дневной</h4>
               <p>с&nbsp;8:00 до&nbsp;17:00</p>
               <div class="choice-subscription__price">
@@ -204,7 +205,7 @@
               </div>
               <a class="choice-subscription__button button" href="#">Купить абонемент</a>
             </li>
-            <li class="choice-subscription__item">
+            <li class="choice-subscription__item" tabindex="0">
               <h4>Полный день</h4>
               <p>с&nbsp;8:00 до&nbsp;22:00</p>
               <div class="choice-subscription__price">
@@ -218,7 +219,7 @@
             </li>
           </ul>
           <ul class="catalog__list choice-subscription is-hidden is-nojs" data-year>
-            <li class="choice-subscription__item">
+            <li class="choice-subscription__item" tabindex="0">
               <h3>12&nbsp;месяцев</h3>
               <h4>С&nbsp;тренером</h4>
               <p>12&nbsp;занятий</p>
@@ -231,7 +232,7 @@
               </div>
               <a class="choice-subscription__button button" href="#">Купить абонемент</a>
             </li>
-            <li class="choice-subscription__item">
+            <li class="choice-subscription__item" tabindex="0">
               <h4>Дневной</h4>
               <p>с&nbsp;8:00 до&nbsp;17:00</p>
               <div class="choice-subscription__price">
@@ -243,7 +244,7 @@
               </div>
               <a class="choice-subscription__button button" href="#">Купить абонемент</a>
             </li>
-            <li class="choice-subscription__item">
+            <li class="choice-subscription__item" tabindex="0">
               <h4>Полный день</h4>
               <p>с&nbsp;8:00 до&nbsp;22:00</p>
               <div class="choice-subscription__price">

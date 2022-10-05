@@ -5,12 +5,11 @@
   max-width: #{"min(85%, 1160px)"};
   min-height: 756px;
   display: flex;
-  justify-content: space-between;
 
   @media (max-width: $vp-1199) {
     padding: 99px 0;
     min-height: 854px;
-    max-width: #{"min(88.2%, 1110px)"};
+    max-width: #{"min(88.6%, 1110px)"};
     flex-direction: column;
     justify-content: flex-start;
   }

@@ -1,7 +1,7 @@
 import {treinersSliderSettings, reviewsSliderSettings, initSlider} from './utils/swiper-settings';
 
 const mobileVersion = window.matchMedia('(max-width: 767px)');
-const tabletVersion = window.matchMedia('(max-width: 1099px)');
+const tabletVersion = window.matchMedia('(max-width: 1199px)');
 const videoContainer = document.querySelector('.video');
 const video = videoContainer.querySelector('iframe');
 const videoButton = document.querySelector('.video__button-play');
@@ -9,6 +9,8 @@ const introDescription = document.querySelector('.intro__description');
 const choiceSubscriptions = document.querySelectorAll('.choice-subscription');
 const choiceButtons = document.querySelectorAll('.choice-month__button');
 const pricesBlocks = document.querySelectorAll('.choice-subscription');
+const header = document.querySelector('.page-header__wrapper');
+const innerHeader = document.querySelector('.inner-header');
 
 const trainersSliderBlock = document.querySelector('.fitness-trainers__trainers');
 const reviewsSliderBlock = document.querySelector('.reviews__wrapper-reviews');
@@ -19,7 +21,12 @@ window.addEventListener('DOMContentLoaded', () => {
   initSlider(trainersSliderBlock, treinersSliderSettings);
   initSlider(reviewsSliderBlock, reviewsSliderSettings);
   showImgs();
+  setMainBackground();
 });
+
+const setMainBackground = () => {
+  innerHeader.style.setProperty('--headerHeight', header.offsetHeight + 4 + 'px');
+};
 
 function showImgs() {
   showImg(document.querySelector('.intro__img'));
@@ -46,6 +53,7 @@ function showImg(element) {
 window.addEventListener('resize', () => {
   showImgs();
   hiddenParagraph();
+  setMainBackground();
 });
 
 // Тренажёрный зал (спрятать абзац)

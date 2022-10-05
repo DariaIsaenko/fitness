@@ -1,7 +1,7 @@
 .fitness-trainers__wrapper {
   padding: 118px 0;
   margin: 0 auto;
-  width: 100%;
+  width: #{"min(100%, 1366px)"};
 
   @media (max-width: $vp-1199) {
     padding: 100px 0;
@@ -13,7 +13,7 @@
 }
 
 .fitness-trainers__wrapper h2 {
-  margin: 0 auto 53px;
+  margin: 0 auto 50px;
   max-width: #{"min(85%, 1160px)"};
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
@@ -24,7 +24,7 @@
   color: $color-sapphire;
 
   @media (max-width: $vp-1199) {
-    margin-bottom: 41px;
+    margin-bottom: 42px;
     max-width: 100%;
     font-size: 42px;
     text-align: center;
@@ -40,20 +40,20 @@
 .fitness-trainers__slider {
   position: relative;
   margin: 0 auto;
-  width: 95.19vw;
+  max-width: #{"min(95.2%, 1300px)"};
 
   @media (max-width: $vp-1199) {
     width: 91.93vw;
   }
 
   @media (max-width: $vp-767) {
-    width: 100%;
+    width: #{"max(100%, 320px)"};
   }
 }
 
 .fitness-trainers__trainers {
   margin: 0 auto;
-  width: 84.92vw;
+  max-width: #{"min(89.2%, 1160px)"};
   overflow: hidden;
 
   @media (max-width: $vp-1199) {
@@ -61,7 +61,7 @@
   }
 
   @media (max-width: $vp-767) {
-    width: 71.9vw;
+    width: #{"max(71.9vw, 230px)"};
   }
 }
 
@@ -74,9 +74,10 @@
 .fitness-trainers__slider-item {
   position: relative;
   padding: 25px 0;
-  margin-right: 2.93vw;
-  max-width: 19.03vw;
-  height: 294px;
+  margin-right: #{"min(2.93vw, 40px)"};
+  min-width: #{"min(19.04vw, 260px)"};
+  width: #{"min(19.04vw, 260px)"};
+  height: #{"min(21.53vw, 294px)"};
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -86,41 +87,49 @@
     padding-bottom: 25px;
     margin-right: 3.91vw;
     min-width: 34.89vw;
-    max-width: 34.89vw;
+    width: 34.85vw;
+    height: 38.08vw;
     justify-self: center;
   }
 
   @media (max-width: $vp-767) {
     padding-bottom: 16px;
+    margin-right: #{"max(3.91vw, 20px)"};
+    min-width: #{"max(70.63vw, 226px)"};
+    width: #{"max(70.63vw, 226px)"};
+    height: #{"max(85.7vw, 274px)"};
     max-width: 71.88vw;
-    height: 274px;
   }
 }
 
 .fitness-trainers__slider-item h3 {
   margin: 0;
-  margin-bottom: 0.1vw;
+  margin-bottom: 1px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 150%;
   text-align: center;
   color: $color-default-white;
 
   @media (max-width: $vp-1199) {
     margin-bottom: 0.2vw;
-    font-size: 18px;
+    font-size: 2.29vw;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: #{"max(5.68vw, 18px)"};
   }
 }
 
 .fitness-trainers__slider-item p {
   display: none;
   margin: 0;
-  margin-bottom: 2.31vw;
+  margin-bottom: 35px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 110%;
   text-align: center;
   color: $color-spindle;
 
@@ -129,11 +138,13 @@
   }
 
   @media (max-width: $vp-767) {
-    margin-bottom: 31.31px;
+    margin-bottom: #{"max(10.31vw, 30px)"};
+    font-size: #{"max(4.9vw, 16px)"};
   }
 }
 
-.fitness-trainers__slider-item:hover p {
+.fitness-trainers__slider-item:hover p,
+.fitness-trainers__slider-item:focus p {
   display: block;
 }
 
@@ -194,7 +205,7 @@
       transform: translate(-4px, -10px) rotate(-45deg);
 
       @media (max-width: $vp-767) {
-        transform: translate(-8px, -6px) rotate(-45deg);
+        transform: translate(-1px, -6px) rotate(-45deg);
       }
     }
   }
@@ -206,7 +217,7 @@
       transform: translate(-17px, -10px) rotate(135deg);
 
       @media (max-width: $vp-767) {
-        transform: translate(-6px, -5px) rotate(135deg);
+        transform: translate(-13px, -5px) rotate(135deg);
       }
     }
   }
@@ -216,6 +227,6 @@
   }
 
   @media (max-width: $vp-767) {
-    width: 14.06vw;
+    width: #{"max(12.06vw, 30px)"};
   }
 }

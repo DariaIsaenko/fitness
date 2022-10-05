@@ -2,6 +2,7 @@ const treinersSliderSettings = {
   speed: 1000,
   loop: true,
   observer: true,
+  focusableElements: 'li',
   navigation: {
     nextEl: '.fitness-trainers__button--next',
     prevEl: '.fitness-trainers__button--prev',

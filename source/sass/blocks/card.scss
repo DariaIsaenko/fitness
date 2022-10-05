@@ -1,9 +1,9 @@
 .card__list {
   display: none;
   padding: 0;
-  padding-left: 1.9vw;
+  padding-left: 26px;
   margin: 0 auto;
-  width: 12.5vw;
+  width: 171px;
   list-style: none;
 
   @media (max-width: $vp-1199) {
@@ -12,13 +12,14 @@
   }
 
   @media (max-width: $vp-767) {
-    padding-left: 6.2vw;
-    width: 50.94vw;
+    padding-left: #{"max(6.2vw, 20px)"};
+    width: #{"max(50.94vw, 164px)"};
   }
 }
 
-.card--state:hover {
-  padding: 4.2vw 0 0.7vw;
+.card--state:hover,
+.card--state:focus {
+  padding: 51px 0 6px;
   justify-content: flex-start;
   background: $color-sapphire-card-transparent;
   outline: none;
@@ -34,18 +35,18 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 48px 0 15px;
+    padding: #{"max(13.1vw, 42px)"} 0 #{"max(4.68vw, 15px)"};
   }
 }
 
 .card__item {
   position: relative;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 1vw;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 150%;
   color: $color-default-white;
 
   &::before {
@@ -61,5 +62,15 @@
     @media (max-width: $vp-1199) {
       left: -16px;
     }
+  }
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 1.66vw;
+    font-size: 1.82vw;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: #{"max(4.1vw, 13px)"};
+    font-size: #{"max(4.38vw, 14px)"};
   }
 }

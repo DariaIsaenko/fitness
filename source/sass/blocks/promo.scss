@@ -1,9 +1,8 @@
 .promo__wrapper {
-  padding: 122px 0 0;
+  padding: 121px 0 0;
   margin: 0 auto;
-  max-width: #{"min(86%, 1160px)"};
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  max-width: #{"min(87.1%, 1160px)"};
+  display: flex;
 
   @media (max-width: $vp-1199) {
     padding: 100px 0 0;
@@ -15,41 +14,41 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: #{"min(90.6%, 678px)"};
+    max-width: #{"min(90.7%, 678px)"};
   }
 }
 
 .promo__info {
   padding: 83px 0 64px;
-  min-width: 500px;
-  grid-column: 1 / 6;
+  width: #{"min(100%, 500px)"};
   background-color: $color-torch-red;
 
   @media (max-width: $vp-1199) {
-    min-width: 292px;
-    padding: 49px 0 27px;
+    width: 65.38vw;
+    min-height: 38.02vw;
+    padding: 6.37vw 0 5vw;
   }
 
   @media (max-width: $vp-767) {
-    padding-bottom: 50px;
-    min-width: 290px;
-    max-width: 100%;
+    padding: 15.1vw 0 15.8vw;
+    width: #{"max(91vw, 290px)"};
   }
 }
 
 .promo__info-wrapper {
   margin: 0 auto;
   min-width: 319px;
-  max-width: #{"min(68.6%, 343px)"};
+  max-width: #{"min(68.6%, 344px)"};
   display: grid;
 
   @media (max-width: $vp-1199) {
     min-width: 202px;
-    max-width: #{"min(69.7%, 343px)"};
+    width: 38vw;
   }
 
   @media (max-width: $vp-767) {
-    max-width: #{"min(69.2%, 649px)"};
+    max-width: #{"max(69.2%, 649px)"};
+    width: #{"max(63vw, 202px)"};
   }
 }
 
@@ -66,9 +65,14 @@
   color: $color-default-white;
 
   @media (max-width: $vp-1199) {
-    margin-bottom: 2px;
-    max-width: 200px;
-    font-size: 52px;
+    margin-bottom: 0.1vw;
+    max-width: 19vw;
+    font-size: 6.64vw;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: #{"max(45vw, 120px)"};
+    font-size: #{"max(16vw, 52px)"};
   }
 }
 
@@ -85,13 +89,15 @@
   color: $color-default-white;
 
   @media (max-width: $vp-1199) {
-    margin-bottom: 30px;
-    font-size: 12px;
-    line-height: 18px;
+    margin-bottom: 3.94vw;
+    font-size: 1.55vw;
+    line-height: 2.4vw;
   }
 
   @media (max-width: $vp-767) {
-    margin-bottom: 29px;
+    margin-bottom: #{"max(8vw, 28px)"};
+    font-size: #{"max(3.75vw, 12px)"};
+    line-height: 150%;
   }
 }
 
@@ -116,8 +122,15 @@
   color: $color-default-white;
 
   @media (max-width: $vp-1199) {
-    font-size: 12px;
-    line-height: 17px;
+    margin-bottom: 0.42vw;
+    font-size: 1.45vw;
+    line-height: 130%;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: #{"max(0.42vw, 3px)"};
+    font-size: #{"max(4vw, 12px)"};
+    line-height: 110%;
   }
 }
 
@@ -142,7 +155,11 @@
 
     @media (max-width: $vp-1199) {
       top: 1px;
-      width: 56px;
+      width: 7.4vw;
+    }
+
+    @media (max-width: $vp-767) {
+      width: #{"max(18vw, 56px)"};
     }
   }
 
@@ -151,15 +168,25 @@
       width: 64px;
 
       @media (max-width: $vp-1199) {
-        width: 48px;
+        width: 5.5vw;
+      }
+
+      @media (max-width: $vp-767) {
+        width: #{"max(14vw, 42px)"};
       }
     }
   }
 
   @media (max-width: $vp-1199) {
     margin-bottom: 0;
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 1.36vw;
+    line-height: 100%;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: #{"max(0.42vw, 3px)"};
+    font-size: #{"max(3.2vw, 10px)"};
+    line-height: 110%;
   }
 }
 
@@ -172,8 +199,13 @@
     color: $color-default-white;
 
     @media (max-width: $vp-1199) {
-      font-size: 24px;
-      line-height: 36px;
+      font-size: 3.2vw;
+      line-height: 4.59vw;
+    }
+
+    @media (max-width: $vp-767) {
+      font-size: #{"max(7vw, 24px)"};
+      line-height: 140%;
     }
   }
 }
@@ -193,7 +225,11 @@
     margin-right: 7px;
 
     @media (max-width: $vp-1199) {
-      margin-right: 3px;
+      margin-right: 0.3vw;
+    }
+
+    @media (max-width: $vp-767) {
+      margin-right: #{"max(0.8vw, 4px)"};
     }
   }
 }
@@ -207,23 +243,31 @@
   letter-spacing: 0.5px;
 
   @media (max-width: $vp-1199) {
-    padding: 12px 22px 11px 20px;
-    font-size: 10px;
-    line-height: 11.72px;
+    padding: 1.5vw 2vw 2vw 1.6vw;
+    font-size: 1.32vw;
+    line-height: 110%;
+    border: 2px solid $color-default-white;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 4.5vw 2vw 3.5vw 1.8vw;
+    font-size: #{"max(3.15vw, 10px)"};
+    line-height: 100%;
     border: 2px solid $color-default-white;
   }
 }
 
 .promo__image {
   position: relative;
-  grid-column: 6 / 13;
+  width: #{"min(100%, 660px)"};
 
   @media (max-width: $vp-1199) {
-    height: 292px;
+    width: 87.07vw;
+    min-height: 38.02vw;
   }
 
   @media (max-width: $vp-767) {
-    max-width: 100%;
+    width: #{"max(90.63vw, 290px)"};
   }
 }
 
